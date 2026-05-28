@@ -8,6 +8,7 @@
 
 ### 🔴 Críticas
 
+- [ ] **Backup na nuvem quebrado:** remote `github.com/Meensina-ai/thiago-docarmo` não existe / sem acesso. `git push` falha. Criar o repo remoto ou corrigir o `git remote set-url`. Avisar Fábio (suporte BA). — surgiu no onboarding 2026-05-28
 - [ ] Refazer agente `construcao-landscape-pm` + MCP `construcao-landscape-mcp` pra stack REAL **Jobber + Square** (estavam desenhados pra GoHighLevel + QuickBooks + Google Calendar). — surgiu no onboarding 2026-05-28
 
 ### 🟡 Médias
