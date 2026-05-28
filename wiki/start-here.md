@@ -49,4 +49,4 @@ Cursor, Claude Code, Codex, Paperclip, Ollama, DeepSeek, Qwen, Hermes, N8N, Comp
 2. Escolher nome do CEO IA
 3. Confirmar mercado primário (US recomendado, mas tem Brasil também)
 4. Validar/corrigir `meu-negocio/empresa.md`
-5. Plano semana 1 vive em `wiki/clients/business-accelerator/thiago-docarmo/planos/` (NO REPO DA Me Ensina AI — copiar pra cá depois)
+5. Plano semana 1 será apresentado por Fábio na reunião 2 e copiado pra `meu-negocio/planos-de-acao/` depois
