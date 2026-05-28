@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit de Entrevista — Onboarding Cliente BA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000000;
+    --bg-card: rgba(255, 255, 255, 0.04);
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #FFFFFF;
+    --text-soft: #E8E8E6;
+    --text-muted: #9898AA;
+    --accent: #F5A623;
+    --accent-light: #FFD980;
+    --accent-dark: #CC7A00;
+    --accent-glow: rgba(245, 166, 35, 0.18);
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-text: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-soft);
+    font-family: var(--font-text);
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 40px 20px;
+    background:
+      radial-gradient(900px 400px at 80% 0%, rgba(245, 166, 35, 0.06), transparent 60%),
+      radial-gradient(700px 300px at 0% 100%, rgba(245, 166, 35, 0.04), transparent 55%),
+      var(--bg);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  header .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(245, 166, 35, 0.1);
+    border: 1px solid rgba(245, 166, 35, 0.3);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  header .gradient {
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 50%, var(--accent-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header p {
+    color: var(--text-muted);
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .meta {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .meta span strong { color: var(--accent); font-weight: 600; }
+
+  .bloco {
+    margin-bottom: 40px;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+  }
+
+  .bloco-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bloco h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  .bloco-time {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .pergunta {
+    margin-bottom: 24px;
+  }
+
+  .pergunta:last-child { margin-bottom: 0; }
+
+  .pergunta-numero {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+
+  .pergunta-texto {
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .pergunta-exemplo {
+    font-size: 13px;
+    color: var(--text-muted);
+    border-left: 2px solid var(--accent-dark);
+    padding-left: 14px;
+    margin-top: 8px;
+  }
+
+  .pergunta-opcoes {
+    margin-top: 10px;
+    padding-left: 14px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .pergunta-opcoes li {
+    margin-bottom: 4px;
+    list-style: none;
+  }
+
+  .principios {
+    margin-top: 40px;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .principios h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .principios ol { padding-left: 20px; }
+  .principios li { margin-bottom: 8px; color: var(--text-soft); }
+  .principios li strong { color: var(--text); }
+
+  .pos-reuniao {
+    margin-top: 32px;
+    padding: 28px;
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.08), rgba(204, 122, 0, 0.04));
+    border: 1px solid rgba(245, 166, 35, 0.2);
+    border-radius: 16px;
+  }
+
+  .pos-reuniao h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .pos-reuniao ol { padding-left: 20px; }
+  .pos-reuniao li { margin-bottom: 12px; color: var(--text-soft); }
+  .pos-reuniao code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--accent-light);
+    border: 1px solid var(--border);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* Print-friendly */
+  @media print {
+    body {
+      background: white;
+      color: #000;
+      font-size: 11pt;
+      padding: 0;
+    }
+    .container { max-width: 100%; }
+    header h1 { color: #000; font-size: 24pt; }
+    header h1 .gradient { color: #CC7A00; -webkit-text-fill-color: #CC7A00; }
+    header p, .meta { color: #555; }
+    .bloco {
+      background: #FAFAFA;
+      border: 1px solid #DDD;
+      page-break-inside: avoid;
+      box-shadow: none;
+    }
+    .bloco h2 { color: #000; }
+    .pergunta-numero, .bloco-time { color: #CC7A00; }
+    .pergunta-texto { color: #000; }
+    .pergunta-exemplo { color: #555; border-color: #CC7A00; }
+    .principios, .pos-reuniao { background: #FAFAFA; border: 1px solid #DDD; }
+    .principios h2, .pos-reuniao h2 { color: #CC7A00; }
+    .pos-reuniao { background: #FFF8EC; }
+    .pos-reuniao code { background: #EEE; color: #000; }
+    footer { color: #888; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <span class="badge">EMPRESA AI · ONBOARDING</span>
+  <h1>Kit de <span class="gradient">Entrevista</span> Cliente</h1>
+  <p>Roteiro de 15 perguntas pra capturar o perfil do negócio do cliente novo na primeira reunião do BA.</p>
+  <div class="meta">
+    <span><strong>Tempo:</strong> 30-45 min</span>
+    <span><strong>Blocos:</strong> 6</span>
+    <span><strong>Perguntas:</strong> 15</span>
+  </div>
+</header>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 1 · Identificação</h2>
+    <span class="bloco-time">5 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 01</div>
+    <div class="pergunta-texto">Qual o nome do seu negócio e há quanto tempo está no mercado?</div>
+    <div class="pergunta-exemplo">Exemplo: "Decorz Flooring, 8 anos."</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 02</div>
+    <div class="pergunta-texto">Em qual cidade, estado e país você opera?</div>
+    <div class="pergunta-exemplo">Exemplo: "Roseville, Califórnia, EUA. Atendo num raio de 30 milhas."</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 03</div>
+    <div class="pergunta-texto">Em qual idioma você se comunica com seus clientes hoje?</div>
+    <ul class="pergunta-opcoes">
+      <li>Português · Inglês · Espanhol · Bilíngue (especificar)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 2 · Produto e cliente</h2>
+    <span class="bloco-time">10 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 04</div>
+    <div class="pergunta-texto">Qual seu produto ou serviço principal e qual o ticket médio?</div>
+    <div class="pergunta-exemplo">Exemplo: "Instalação de piso de madeira engenheirada e laminado. Ticket médio $3.500."</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 05</div>
+    <div class="pergunta-texto">Descreva seu cliente ideal: faixa etária, renda, profissão, geografia, dor principal.</div>
+    <div class="pergunta-exemplo">Exemplo: "Casal de 35-50 anos, renda $80k-$150k, donos de casa, estão reformando. Dor: não sabem em quem confiar."</div>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 3 · Dores e objeções</h2>
+    <span class="bloco-time">10 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 06</div>
+    <div class="pergunta-texto">Quais as top 3 dores que seus clientes buscam resolver? Em ordem de importância.</div>
+    <div class="pergunta-exemplo">
+      Exemplo:<br>
+      1. Não sabem instalar piso direito sem estragar.<br>
+      2. Empreiteiros desaparecem no meio do projeto.<br>
+      3. Estouram orçamento por subestimar custos.
+    </div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 07</div>
+    <div class="pergunta-texto">Quais as top 3 objeções comuns que aparecem na sua venda?</div>
+    <div class="pergunta-exemplo">
+      Exemplo:<br>
+      1. "Tô pensando em fazer DIY pra economizar."<br>
+      2. "Achei mais barato com outro profissional."<br>
+      3. "Vou esperar mais um tempo, agora não é uma boa hora."
+    </div>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 4 · Diferenciação e voz</h2>
+    <span class="bloco-time">5 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 08</div>
+    <div class="pergunta-texto">Quais os diferenciais REAIS do seu negócio? Específico, não genérico.</div>
+    <div class="pergunta-exemplo">
+      Evite: "atendimento de qualidade", "preço justo".<br>
+      Busque: "Garantia de 5 anos por escrito", "Visitamos a casa antes de orçar", "Equipe própria".
+    </div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 09</div>
+    <div class="pergunta-texto">Qual o tom da sua marca?</div>
+    <ul class="pergunta-opcoes">
+      <li>1. Formal (profissional, técnico, distância confortável)</li>
+      <li>2. Amigável (próximo, parceiro, gentil)</li>
+      <li>3. Técnico (especialista, dados, autoridade)</li>
+      <li>4. Inspiracional (motivador, transformador, propósito)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 5 · Operação atual</h2>
+    <span class="bloco-time">5 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 10</div>
+    <div class="pergunta-texto">Que ferramentas você usa hoje? Liste todas.</div>
+    <div class="pergunta-exemplo">Pagamento, CRM, marketing, calendário, contabilidade, agendamento, etc.</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 11</div>
+    <div class="pergunta-texto">Por quais canais seus clientes chegam hoje?</div>
+    <ul class="pergunta-opcoes">
+      <li>1. Indicação · 2. Google (orgânico ou pago) · 3. Redes sociais</li>
+      <li>4. Site próprio · 5. Anúncios pagos · 6. Eventos · 7. Outro</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="bloco-header">
+    <h2>Bloco 6 · Metas e gargalo</h2>
+    <span class="bloco-time">10 min</span>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 12</div>
+    <div class="pergunta-texto">Qual sua meta de faturamento nos próximos 90 dias?</div>
+    <div class="pergunta-exemplo">Pode ser valor mensal ou total trimestral.</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 13</div>
+    <div class="pergunta-texto">Qual seu maior gargalo hoje?</div>
+    <ul class="pergunta-opcoes">
+      <li>1. Falta de lead qualificado</li>
+      <li>2. Lead chega mas não fecha</li>
+      <li>3. Vendo mas não entrego bem (fulfillment)</li>
+      <li>4. Cliente cancela rápido (retenção)</li>
+      <li>5. Outro</li>
+    </ul>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 14</div>
+    <div class="pergunta-texto">Quantas horas por semana você consegue dedicar a esse projeto?</div>
+    <div class="pergunta-exemplo">Exemplo: 5, 10, 20 horas.</div>
+  </div>
+
+  <div class="pergunta">
+    <div class="pergunta-numero">PERGUNTA 15</div>
+    <div class="pergunta-texto">O que você queria ver PRONTO em 30 dias? Vitória rápida.</div>
+    <div class="pergunta-exemplo">Exemplo: "Site institucional novo", "30 leads gerados", "Fluxo de email funcionando".</div>
+  </div>
+</section>
+
+<section class="pos-reuniao">
+  <h2>Após a reunião</h2>
+  <ol>
+    <li>Exportar gravação como <code>.mp3</code> ou <code>.mp4</code>.</li>
+    <li>Rodar Whisper: <code>whisper gravacao.mp4 --language Portuguese --model medium --output_format txt</code></li>
+    <li>Copiar pra <code>~/meensinaai-ba-thiago-docarmo/meu-negocio/.transcricao-onboarding.md</code></li>
+    <li>No Claude Desktop do cliente, rodar <code>/gerar-perfil-do-negocio</code></li>
+    <li>Skill detecta automático Modo A e popula o perfil em ~5 minutos</li>
+    <li>Cliente abre o painel, dá F5, vê o perfil dele renderizado</li>
+  </ol>
+</section>
+
+<section class="principios">
+  <h2>Princípios da entrevista</h2>
+  <ol>
+    <li><strong>Uma pergunta por vez.</strong> Não atropele com várias na mesma frase.</li>
+    <li><strong>Deixe o cliente falar.</strong> Silêncio não é problema, deixe ele pensar.</li>
+    <li><strong>Respostas específicas.</strong> Quando ele responder genérico, peça exemplo concreto.</li>
+    <li><strong>Anote palavras dele.</strong> A voz da marca vem da boca dele, não da nossa interpretação.</li>
+    <li><strong>Não interrompa pra explicar nosso produto.</strong> Hoje é dele, é discovery.</li>
+    <li><strong>Grave sempre.</strong> Transcrição é o que alimenta o perfil automático.</li>
+  </ol>
+</section>
+
+<footer>
+  EMPRESA AI · v1.0.0 · 2026-05-08
+</footer>
+
+</div>
+</body>
+</html>

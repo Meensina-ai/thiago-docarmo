@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit de Instalação — Empresa AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000000;
+    --bg-card: rgba(255, 255, 255, 0.04);
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #FFFFFF;
+    --text-soft: #E8E8E6;
+    --text-muted: #9898AA;
+    --accent: #F5A623;
+    --accent-light: #FFD980;
+    --accent-dark: #CC7A00;
+    --accent-glow: rgba(245, 166, 35, 0.18);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background:
+      radial-gradient(900px 400px at 80% 0%, rgba(245, 166, 35, 0.06), transparent 60%),
+      radial-gradient(700px 300px at 0% 100%, rgba(245, 166, 35, 0.04), transparent 55%),
+      var(--bg);
+    color: var(--text-soft);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+
+  .container { max-width: 760px; margin: 0 auto; }
+
+  header { text-align: center; margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+
+  header .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(245, 166, 35, 0.1);
+    border: 1px solid rgba(245, 166, 35, 0.3);
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  header h1 .gradient {
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 50%, var(--accent-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header p { color: var(--text-muted); font-size: 16px; max-width: 600px; margin: 0 auto; }
+
+  .meta {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .meta span strong { color: var(--accent); font-weight: 600; }
+
+  .pre-step {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: rgba(245, 166, 35, 0.05);
+    border: 1px solid rgba(245, 166, 35, 0.2);
+    border-radius: 12px;
+  }
+  .pre-step h3 { color: var(--accent); font-family: 'Space Grotesk', sans-serif; margin-bottom: 12px; font-size: 16px; }
+  .pre-step ul { padding-left: 20px; }
+  .pre-step li { margin-bottom: 6px; color: var(--text-soft); }
+
+  .step {
+    margin-bottom: 28px;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    position: relative;
+    page-break-inside: avoid;
+  }
+
+  .step-number {
+    position: absolute;
+    top: -14px;
+    left: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-light), var(--accent), var(--accent-dark));
+    color: #000;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px var(--accent-glow);
+  }
+
+  .step-time {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    background: rgba(245, 166, 35, 0.1);
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 166, 35, 0.3);
+  }
+
+  .step h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: 8px 80px 16px 0;
+  }
+
+  .step p { margin-bottom: 12px; color: var(--text-soft); }
+  .step ul, .step ol { padding-left: 22px; margin-bottom: 12px; }
+  .step li { margin-bottom: 8px; color: var(--text-soft); }
+  .step strong { color: var(--text); }
+  .step code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--accent-light);
+    border: 1px solid var(--border);
+  }
+  .step pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: var(--accent-light);
+    border: 1px solid var(--border);
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+
+  .pronto {
+    margin: 40px 0;
+    padding: 36px;
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.12), rgba(204, 122, 0, 0.06));
+    border: 1px solid rgba(245, 166, 35, 0.3);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .pronto h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .pronto ul { display: inline-block; text-align: left; padding-left: 0; }
+  .pronto li { list-style: none; padding-left: 28px; position: relative; margin-bottom: 8px; color: var(--text-soft); }
+  .pronto li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .proximos {
+    margin-top: 32px;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+  .proximos h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .proximos table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  .proximos th, .proximos td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .proximos th { color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .proximos td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-light);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .travas {
+    margin-top: 32px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .travas h3 { color: var(--text); font-family: 'Space Grotesk', sans-serif; margin-bottom: 12px; font-size: 16px; }
+  .travas ul { padding-left: 18px; }
+  .travas li { margin-bottom: 6px; }
+
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  footer strong { color: var(--accent); font-weight: 600; }
+
+  @media print {
+    body { background: white; color: #000; padding: 20px; }
+    .container { max-width: 100%; }
+    header h1 { color: #000; font-size: 26pt; }
+    header h1 .gradient { color: #CC7A00; -webkit-text-fill-color: #CC7A00; }
+    header p, .meta { color: #555; }
+    .pre-step { background: #FFF8EC; border: 1px solid #F5A623; }
+    .pre-step h3 { color: #CC7A00; }
+    .step { background: #FAFAFA; border: 1px solid #DDD; box-shadow: none; }
+    .step h2 { color: #000; }
+    .step-number { background: #F5A623; color: #000; }
+    .step-time { color: #CC7A00; background: #FFF8EC; border-color: #F5A623; }
+    .step code, .step pre { background: #F0F0F0; color: #000; border-color: #CCC; }
+    .pronto { background: #FFF8EC; border-color: #F5A623; }
+    .pronto h2 { color: #CC7A00; }
+    .pronto li::before { color: #CC7A00; }
+    .proximos { background: #FAFAFA; border-color: #DDD; }
+    .proximos h2, .proximos th, .proximos td:first-child { color: #CC7A00; }
+    .travas { background: #FAFAFA; border-color: #DDD; }
+    .travas h3 { color: #000; }
+    footer { color: #555; }
+    footer strong { color: #CC7A00; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <span class="badge">EMPRESA AI · INSTALAÇÃO</span>
+  <h1>Kit de <span class="gradient">Instalação</span></h1>
+  <p>Roteiro pra instalar a Empresa AI no seu laptop em 60 a 90 minutos durante o evento.</p>
+  <div class="meta">
+    <span><strong>Tempo:</strong> 60-90 min</span>
+    <span><strong>Passos:</strong> 7</span>
+    <span><strong>Suporte:</strong> Fábio presente</span>
+  </div>
+</header>
+
+<section class="pre-step">
+  <h3>Antes de começar</h3>
+  <ul>
+    <li>Laptop ligado e carregado</li>
+    <li>Conexão Wi-Fi do evento</li>
+    <li>Cartão de crédito pra Anthropic API ($5 inicial dura ~30 dias)</li>
+  </ul>
+</section>
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="step-time">5 min</div>
+  <h2>Instalar Claude Desktop</h2>
+  <ul>
+    <li>Site: <code>claude.ai/download</code></li>
+    <li><strong>Mac:</strong> baixar <code>.dmg</code> → arrastar pra Applications</li>
+    <li><strong>Windows:</strong> baixar <code>.exe</code> → executar instalador</li>
+    <li>Abrir Claude Desktop e fazer login com conta Anthropic (criar grátis se não tiver)</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="step-time">5 min</div>
+  <h2>Instalar Git</h2>
+  <ul>
+    <li><strong>Mac:</strong> abrir Terminal, digitar <code>git --version</code>. Se aparecer popup pedindo Xcode Command Line Tools, clicar em "Instalar" e esperar.</li>
+    <li><strong>Windows:</strong> ir em <code>git-scm.com/download/win</code> → baixar e executar com configurações padrão.</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="step-time">10 min</div>
+  <h2>Receber o repositório do seu negócio</h2>
+  <p>Fábio compartilha um link único pro seu repositório no GitHub.</p>
+  <p><strong>Mac:</strong> abrir Terminal e rodar:</p>
+  <pre>cd ~
+git clone &lt;link-recebido&gt;</pre>
+  <p><strong>Windows:</strong> abrir Git Bash (instalado junto com Git) e rodar o mesmo comando acima.</p>
+  <p>Você vai ter uma pasta nova no seu computador com o nome do seu negócio.</p>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="step-time">5 min</div>
+  <h2>Conectar o repositório ao Claude Desktop</h2>
+  <ul>
+    <li>Abrir Claude Desktop</li>
+    <li>Menu: <strong>File &gt; Open Folder</strong></li>
+    <li>Selecionar a pasta que você acabou de baixar</li>
+    <li>Pronto. Claude Desktop agora está apontando pra sua Empresa AI.</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="step-time">5 min</div>
+  <h2>Configurar a chave da Anthropic</h2>
+  <ul>
+    <li>Em Claude Desktop, ir em <strong>Settings &gt; API Keys</strong></li>
+    <li>Colar a chave que Fábio te entregar</li>
+    <li>Salvar e fechar Settings</li>
+    <li>Você verá conexão verde "Connected"</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="step-time">30 min</div>
+  <h2>Onboarding do seu negócio</h2>
+  <p>Em Claude Desktop, com sua pasta aberta, digitar no chat:</p>
+  <pre>/gerar-perfil-do-negocio</pre>
+  <p>A skill conduz <strong>15 perguntas em 6 blocos</strong>, uma de cada vez. Responda direto, sem pressa. Esse perfil alimenta todos os 54 agentes do seu time de IA.</p>
+</div>
+
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="step-time">1 min</div>
+  <h2>Abrir o painel</h2>
+  <ul>
+    <li>Na pasta do seu repositório, encontrar o arquivo <code>painel.html</code></li>
+    <li>Duplo clique → abre no seu navegador padrão</li>
+    <li><strong>Atalho recomendado:</strong> arrastar <code>painel.html</code> pra área de trabalho como atalho. Vira sua "central de comando" diária.</li>
+  </ul>
+</div>
+
+<section class="pronto">
+  <h2>Você está pronto.</h2>
+  <p style="margin-bottom: 20px; color: var(--text-soft);">A partir de agora sua Empresa AI tem:</p>
+  <ul>
+    <li>Perfil do negócio salvo e lido por todos os agentes</li>
+    <li>54 agentes especializados prontos pra executar</li>
+    <li>Painel local mostrando status do time em tempo real</li>
+    <li>Botão "Abrir Claude" no painel pra falar com seu CEO IA quando quiser</li>
+  </ul>
+</section>
+
+<section class="proximos">
+  <h2>Próximos passos sugeridos</h2>
+  <p style="color: var(--text-muted); margin-bottom: 12px;">No Claude Desktop, rode os comandos abaixo conforme precisar:</p>
+  <table>
+    <thead>
+      <tr><th>Comando</th><th>O que faz</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>/plano-de-acao-90-dias</td><td>Gera seu plano de execução com ~30 tarefas distribuídas em 12 semanas</td></tr>
+      <tr><td>/ceo-novo-pedido</td><td>Quando você tiver ideia ou pedido novo (ex: "campanha de feriado")</td></tr>
+      <tr><td>/atualizar-portal</td><td>Quando Fábio avisar que tem versão nova do sistema</td></tr>
+      <tr><td>/reverter-portal</td><td>Se algum update novo não funcionar bem, volta pra versão anterior</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="travas">
+  <h3>Se algo travar durante a instalação</h3>
+  <p style="margin-bottom: 12px;">Fábio está no evento pra ajudar. Levante a mão. Os 5% de casos que dão problema costumam ser:</p>
+  <ul>
+    <li>Permissão de admin no Mac pedindo senha (digite a sua)</li>
+    <li>Antivírus do Windows bloqueando Git (libere uma vez)</li>
+    <li>Wi-Fi instável pra baixar o repositório (aguarde ou reconecte)</li>
+    <li>Conta Anthropic sem cartão cadastrado (cadastre durante o passo 5)</li>
+  </ul>
+  <p style="margin-top: 12px; color: var(--text-soft);"><strong>Tudo previsível. Tudo resolvível em 2 minutos.</strong></p>
+</section>
+
+<footer>
+  Bem-vindo à <strong>Empresa AI</strong>.<br>
+  Powered by <strong>Empresa AI</strong> · v1.0.0 · 2026-05-08
+</footer>
+
+</div>
+</body>
+</html>
