@@ -1,6 +1,6 @@
 # Agentes — Catálogo
 
-> Time: **52 agentes**.
+> Time: **57 agentes** (52 do template + 5 custom do nicho construção/landscape).
 
 ## Visão por categoria
 
@@ -79,8 +79,13 @@
 - [[twitter-scraper]] — Curadoria automatizada de Twitter/X pra inteligência de mercado e ideação de conteúdo. Use quando precisar monitorar con...
 - [[youtube-transcriber]] — Transcrição e análise de vídeos YouTube pra reuso em outros canais. Use quando precisar puxar transcrição completa de ví...
 
-### Outros / Customizados do nicho (1)
+### Outros / Customizados do nicho (6)
 - [[product-builder]] — Product Builder pra produtos digitais (SaaS, infoprodutos, MVPs). Use quando precisar transformar ideia validada em prod...
+- [[nicho/construcao-landscape-pm]] — PM do pipeline construção/landscape Cape Cod (Track A). Lead → estimate → schedule → invoice → cobrança. Usa MCP construcao-landscape-mcp (GHL + QuickBooks + Google Calendar).
+- [[nicho/invoice-product-arch]] — Arquiteto do SaaS Invoice multilíngue (Track B). DORMENTE até joint venture formal com sócio dev. Spec + handoff técnico.
+- [[nicho/vps-ops-strategist]] — Estrategista da operação VPS/data center (Track C). Posicionamento competitivo, pricing, ICP. Análise trimestral + oportunidades novas.
+- [[nicho/dev-partnership-coordinator]] — Coordenador da parceria de dev com sócio BR. Sprints quinzenais, backlog GitHub, retros, reduz bus-factor.
+- [[nicho/exit-restaurante]] — Plano de saída do restaurante (Track Z). Valuation, lista compradores, due diligence prep, cronograma 2 meses. NÃO automatiza operação.
 
 ## Navegação
 

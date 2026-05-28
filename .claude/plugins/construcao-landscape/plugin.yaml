@@ -1,0 +1,84 @@
+name: construcao-landscape
+version: 0.1.0
+description: >
+  Plugin custom pro nicho construcao/landscape (Track A). Empacota
+  agents do nicho, MCP server, comandos e Live Artifacts relacionados.
+  Tier 1 Claude Native conforme ADR.
+
+agents:
+  - ../../agents/nicho/construcao-landscape-pm.md
+  - ../../agents/nicho/invoice-product-arch.md
+  - ../../agents/nicho/vps-ops-strategist.md
+  - ../../agents/nicho/dev-partnership-coordinator.md
+  - ../../agents/nicho/exit-restaurante.md
+
+mcp_servers:
+  - ../../mcp/construcao-landscape-mcp/
+
+commands:
+  - novo-lead
+  - faturar-job
+  - relatorio-pipeline
+  - status-exit-restaurante
+
+live_artifacts:
+  - ../../../live-artifacts/pipeline-construcao.html
+  - ../../../live-artifacts/dashboard-receita-pessoal.html
+  - ../../../live-artifacts/exit-restaurante.html
+  - ../../../live-artifacts/vps-positioning.html
+
+scheduled_tasks:
+  - id: pipeline-diario
+    cron: "0 8 * * *"
+    description: "Resumo diario do pipeline construcao (8h NY)"
+    agent: construcao-landscape-pm
+  - id: snapshot-semanal
+    cron: "0 17 * * 5"
+    description: "Snapshot semanal de receita por track (sexta 17h NY)"
+    agent: construcao-landscape-pm
+  - id: review-mensal-meta
+    cron: "0 10 1 * *"
+    description: "Review meta $10k/mes escalavel (dia 1, 10h NY)"
+    agent: construcao-landscape-pm
+  - id: revisao-exit-restaurante
+    cron: "0 9 * * 1"
+    description: "Atualizacao semanal status venda restaurante (segunda 9h NY)"
+    agent: exit-restaurante
+
+permissions:
+  network:
+    - api.gohighlevel.com
+    - quickbooks.api.intuit.com
+    - sandbox-quickbooks.api.intuit.com
+    - www.googleapis.com
+  filesystem:
+    read:
+      - meu-negocio/**
+      - wiki/**
+      - live-artifacts/**
+    write:
+      - meu-negocio/pipeline/**
+      - meu-negocio/relatorios/**
+      - meu-negocio/exit-restaurante/**
+      - meu-negocio/tracks/**
+      - meu-negocio/parceria-dev/**
+      - meu-negocio/plano-de-acao.md
+      - meu-negocio/dados.js
+      - live-artifacts/**
+
+env_required:
+  - GHL_API_KEY
+  - GHL_LOCATION_ID
+  - QB_CLIENT_ID
+  - QB_CLIENT_SECRET
+  - QB_REALM_ID
+  - QB_REFRESH_TOKEN
+  - GCAL_CLIENT_ID
+  - GCAL_CLIENT_SECRET
+  - GCAL_REFRESH_TOKEN
+
+notes: |
+  Plugin manifest pra estrutura interna do repo. Claude Code
+  consome agents em `.claude/agents/` e MCP via `mcpServers` em
+  settings.json — este YAML serve como indice humano + base pra
+  futura embalagem de plugin distribuivel.

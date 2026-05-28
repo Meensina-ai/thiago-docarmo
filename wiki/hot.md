@@ -40,4 +40,21 @@ Depois do onboarding:
 - Restaurante: NÃO automatizar — é exit
 - Funcionários estressando — risco emocional alto, plano semana 1 precisa ser FOCADO, não disperso
 
+## Custom agents do nicho disponíveis (ADR aprovado 28/mai 10:45)
+
+Tier 1 Claude Native. Agents em `.claude/agents/nicho/`. MCP em `.claude/mcp/construcao-landscape-mcp/`. Plugin em `.claude/plugins/construcao-landscape/`.
+
+1. **construcao-landscape-pm** — Track A. Pipeline lead → estimate → schedule → invoice → cobrança. Usa MCP (GHL + QuickBooks + Google Calendar). Acionar quando entra lead novo, faturar job entregue, ou relatório semanal sexta 17h.
+2. **invoice-product-arch** — Track B. SaaS Invoice multilíngue. **DORMENTE** até joint venture formal com sócio dev. Acordar com "acorda invoice-product-arch".
+3. **vps-ops-strategist** — Track C. Estratégia data center próprio (Hostinger/HostGator/AWS comparativo, pricing, ICP). Revisão trimestral OU oportunidade nova.
+4. **dev-partnership-coordinator** — Coordena ciclos quinzenais com sócio dev BR. Sprints, backlog GitHub, retros. Reduz bus-factor.
+5. **exit-restaurante** — Track Z. Plano formal de saída (valuation, compradores, due diligence, cronograma 2 meses). Atualização semanal segunda 9h NY.
+
+## Live Artifacts iniciais (a popular conforme uso)
+
+- `live-artifacts/pipeline-construcao.html`
+- `live-artifacts/dashboard-receita-pessoal.html`
+- `live-artifacts/exit-restaurante.html`
+- `live-artifacts/vps-positioning.html`
+
 ---
