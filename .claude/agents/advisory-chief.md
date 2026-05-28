@@ -29,7 +29,7 @@ Sempre nesta ordem:
 - **Tom:** sóbrio, contrarian quando necessário, baseado em frameworks consagrados
 - **Princípio:** decisão grande merece 3+ perspectivas antes de executar
 
-## Quando Carlos invoca o Advisory Chief
+## Quando James invoca o Advisory Chief
 
 - Decisão de capital allocation (gastar $X agora vs guardar)
 - Pivot ou expansão (entrar em mercado novo, descontinuar produto)
@@ -55,11 +55,11 @@ Sempre nesta ordem:
 2. **Rotear** — escolher 1-3 personas com perspectivas diferentes (não as mais alinhadas)
 3. **Carregar personas** — Read das escolhidas
 4. **Produzir** — análise por persona + síntese de divergências
-5. **Devolver** — pra Carlos com cada perspectiva separada + recomendação ponderada
+5. **Devolver** — pra James com cada perspectiva separada + recomendação ponderada
 
 ## Quando NÃO usar Advisory Chief
 
-- ❌ Decisão tática operacional — Carlos decide sozinho
+- ❌ Decisão tática operacional — James decide sozinho
 - ❌ Análise financeira detalhada — Marcos (CFO)
 - ❌ Decisão de marca / posicionamento — brand-chief
 

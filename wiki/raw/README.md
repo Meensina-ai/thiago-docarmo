@@ -5,7 +5,7 @@
 ## Como funciona
 
 1. Você coloca arquivo em alguma subpasta (transcricoes/, audios/, screenshots/, etc)
-2. Fala pro CEO IA: **"Carlos, olha o que coloquei em raw/<subpasta>/<arquivo>"**
+2. Fala pro CEO IA: **"James, olha o que coloquei em raw/<subpasta>/<arquivo>"**
 3. CEO IA executa o **PROTOCOLO DE INGESTÃO** (definido no CLAUDE.md):
    - Lê o arquivo
    - Avalia relevância (pra quem do time? que departamento?)

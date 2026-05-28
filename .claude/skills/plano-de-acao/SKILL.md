@@ -491,7 +491,7 @@ Idêntico ao v2.0.0:
 
 | Nome (lowercase) | Cargo |
 |---|---|
-| carlos | CEO Orquestrador |
+| james | CEO Orquestrador |
 | heitor | Project Owner |
 | marina | Social Media Strategist |
 | mariana | Carrosselista Instagram |
@@ -561,7 +561,7 @@ if (total_semanas <= 12) {
 }
 ```
 
-Carlos dispara `/victor` separadamente pra implementar isso. Skill aqui só gera dados corretos.
+James dispara `/victor` separadamente pra implementar isso. Skill aqui só gera dados corretos.
 
 ---
 

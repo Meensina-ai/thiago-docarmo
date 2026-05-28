@@ -13,7 +13,7 @@ Este workflow atende a **[SUA EMPRESA]** — Software House AI-Native + Agência
 
 **Dor da [DONO]:** pipeline vazio, aquisição B2B especialmente difícil (ticket alto, ciclo longo, decisão compartilhada).
 
-**CEO da operação de IA:** [CEO] (nome da [DONO] pro agente `/carlos`).
+**CEO da operação de IA:** [CEO] (nome da [DONO] pro agente `/james`).
 
 **Regra central:** tecnologia + estratégia + IA sempre juntas.
 
@@ -48,7 +48,7 @@ Sequencia a prospecção B2B ativa da [SUA EMPRESA] do primeiro toque no LinkedI
 ## Fases do Workflow
 
 ### Fase 1 — Planejamento Semanal (Segunda, 60 min)
-**Agente líder:** [[../agents/carlos]] ([CEO])
+**Agente líder:** [[../agents/james]] ([CEO])
 
 [CEO] define foco da semana com base em dados da semana anterior:
 - Qual dos 3 perfis B2B atacar (agência / lançador / empresa em transformação)
@@ -123,7 +123,7 @@ Tempo estimado: 15–30 min por proposta.
 Entrega: `wiki/clients/[prospect]/proposta-vN.md`.
 
 ### Fase 8 — Revisão CEO + Envio
-**Agente líder:** [[../agents/carlos]] ([CEO])
+**Agente líder:** [[../agents/james]] ([CEO])
 
 [CEO] revisa proposta antes de enviar ao cliente. Ajusta se necessário. [DONO] ou [CEO] envia.
 
@@ -145,14 +145,14 @@ Cliente aprova proposta → Eduardo gera contrato → [CEO] revisa → envio via
 
 | Fase | Agente líder | Apoio |
 |------|--------------|-------|
-| 1. Plano semanal | [[../agents/carlos]] ([CEO]) | [[../agents/henrique]] |
+| 1. Plano semanal | [[../agents/james]] ([CEO]) | [[../agents/henrique]] |
 | 2. Montagem de lista | [[../agents/tatiana]] | [[../agents/henrique]] |
 | 3. Sequências | [[../agents/tatiana]] | [[../squads/copy-squad]] |
 | 4. Disparo | [[../agents/tatiana]] | — |
 | 5. Discovery | [[../agents/nina]] | — |
 | 6. Qualificação BANT | [[../agents/rodrigo]] | — |
 | 7. Proposta | [[../agents/valeria]] | [[../squads/hormozi-squad]] se reposicionamento |
-| 8. Revisão + envio | [[../agents/carlos]] ([CEO]) | [DONO] final |
+| 8. Revisão + envio | [[../agents/james]] ([CEO]) | [DONO] final |
 | 9. Follow-up | [[../agents/rodrigo]] + [[../agents/juliana]] | [[../agents/pedro]] |
 | 10. Contrato + onboarding | [[../agents/eduardo]] | dispara workflow-onboarding-cliente |
 

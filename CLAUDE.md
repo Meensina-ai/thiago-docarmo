@@ -16,152 +16,6 @@ Ao iniciar qualquer conversa neste projeto, você DEVE verificar:
 
 ---
 
-## PROTOCOLO DE ONBOARDING (executa quando hot.md tem marker ONBOARDING PENDENTE)
-
-Quando você (CEO IA) detectar `ONBOARDING PENDENTE` em `wiki/hot.md` na primeira sessão, **PARE tudo** e execute este protocolo antes de qualquer outra coisa.
-
-REGRA CRÍTICA: cada resposta deve ser GRAVADA em arquivo persistente imediatamente após coletada. Nunca confiar em memory volátil. O aluno NUNCA deve responder a mesma pergunta duas vezes.
-
-Tempo estimado total: 15-20 min. Faça 1 pergunta por vez. Valide cada resposta.
-
-### BLOCO 0 — MERCADO (1 pergunta) — DEFINE QUE EXTRAS CARREGAR
-
-Pergunte:
-1. Mercado primário do seu negócio?
-   - 🇺🇸 **US** (default — recomendado, recomendado)
-   - 🇧🇷 BR
-   - Outro (especificar)
-   - Múltiplos (US + BR, etc)
-
-EXECUÇÃO PÓS-BLOCO 0:
-
-Copiar arquivos de validações + gateways do mercado escolhido. O Onboarding Chief já deve ter colocado em `wiki/operations/references/onboarding/`. Se NÃO estiver lá (aluno antigo, pull manual), copie agora:
-
-```bash
-mkdir -p wiki/operations/references/onboarding/
-EXTRAS="../../../../../wiki/clients/business-accelerator/_templates/_extras-por-mercado"
-case "<mercado>" in
-  US|us) cp "$EXTRAS/us/"*.md wiki/operations/references/onboarding/ ;;
-  BR|br) cp "$EXTRAS/br/"*.md wiki/operations/references/onboarding/ ;;
-  multi) cp "$EXTRAS/us/"*.md "$EXTRAS/br/"*.md wiki/operations/references/onboarding/ ;;
-esac
-```
-
-Salvar mercado escolhido em `wiki/operations/preferencias.md` (linha `mercado_primario: US`).
-
-### BLOCO 1 — IDENTIDADE (5 perguntas)
-
-**Knowledge-base de validação:** `wiki/operations/references/onboarding/validacoes.md` (regex Phone, EIN, ZIP, GitHub, Email se US — ou CNPJ, CPF se BR)
-
-Pergunte UMA POR VEZ:
-1. Seu sobrenome?
-2. Nome da sua empresa?
-3. Tax ID da empresa? (US: EIN formato `XX-XXXXXXX` | BR: CNPJ 14 dígitos | outro: pular)
-4. Seu username no GitHub? (validar existência via `gh api users/<username>` ou fallback `curl https://api.github.com/users/<u>`)
-5. Email + telefone (US: `+1XXXXXXXXXX` E.164 | BR: WhatsApp DDD+9 dígitos) + cidade/estado?
-
-EXECUÇÃO PÓS-BLOCO 1 (escrever em arquivos):
-- Atualizar **header do CLAUDE.md** com nome real, empresa, Tax ID
-- Criar `wiki/clients/<primeironome-empresa>/perfil.md` com identidade completa
-- Atualizar `.claude/settings.json` com github username
-- Renomear paths placeholder:
-  - `~/meensinaai-ba-thiago-docarmo/` (já com nome final, não precisa renomear)
-  - `<placeholder>.code-workspace` → `<primeironome-empresa>.code-workspace`
-  - Atualizar README.md com novo nome
-- Resolver conflito: se nome do aluno colide com nome de agente em `.claude/agents/` (ex: aluno Marcos × agente marcos.md), renomeie o agente pra função-funcional (marcos.md → cfo.md, frontmatter `name: marcos` → `name: cfo`, conteúdo intacto). Avise o aluno.
-
-### BLOCO 2 — SETUP TÉCNICO (5 perguntas)
-
-1. Mac ou Windows?
-2. Plano Cloud Code ativo? ($20 / $100 / $200) — recomendar $100 inicial
-3. Preferência principal: VS Code ou Desktop Antropic?
-4. Specs do computador (RAM, processador) — opcional
-5. Horário diário disponível pra usar?
-
-EXECUÇÃO PÓS-BLOCO 2:
-- Criar `wiki/operations/conta-cloud-code.md` com plano + email Antropic
-- Ajustar `.claude/settings.json` conforme VS Code/Desktop
-- Anotar specs em `wiki/operations/preferencias.md`
-
-### BLOCO 3 — OPERACIONAL (3 perguntas)
-
-1. Que nome quer dar pro seu CEO IA? (atual placeholder: `ceo.md`)
-2. Timezone (validar contra cidade do bloco 1)
-3. Modelo de trabalho preferido: 100% chat manual ou semi-automático com aprovação antes de executar?
-
-EXECUÇÃO PÓS-BLOCO 3:
-- Se aluno escolher nome pro CEO, renomeie `agents/ceo.md` → `agents/<nome>.md` + frontmatter `name: ceo` → `name: <nome>`. Atualize todas as referências cruzadas em CLAUDE.md, README.md, outros agents.
-- Salvar timezone + modelo trabalho em `wiki/operations/preferencias.md`
-
-### BLOCO 4 — CLIENTES FINAIS (5 perguntas)
-
-**Knowledge-base de gateways:** `wiki/operations/references/onboarding/gateways.md` (US: Stripe/Twilio/HubSpot/Plaid | BR: Asaas/Sicoob/Itaú/Inter/Z-API — depende do mercado escolhido no BLOCO 0)
-
-Pergunte UMA POR VEZ:
-1. 3 clientes-piloto: nome empresa + setor + dor principal de cada
-2. Volume mensal estimado: número de transações/mês, faturas/mês, leads/mês
-3. Gateway de pagamento atual? (consulte `gateways.md` pra opções do mercado escolhido — ex: Stripe se US, Asaas se BR)
-4. Provedor de mensageria? (US default: Twilio | BR default: Z-API ou WhatsApp Business oficial Meta)
-5. CRM atual? (US default: HubSpot | BR comum: GoHighLevel, HubSpot, Pipedrive, planilha, nenhum)
-
-EXECUÇÃO PÓS-BLOCO 4:
-- Refinar agents customizados do nicho em `.claude/agents/` ou `.claude/agents/nicho/` com setores/clientes/integrações reais
-- Salvar integrações em `wiki/operations/integracoes.md` (gateway + messaging + CRM escolhidos)
-- Criar `wiki/products/<setor>.md` pra cada um dos 3 clientes-piloto
-- Listar pendências humanas em `wiki/operations/pendencias.md` (ex: criar conta Stripe/Asaas, configurar webhook, importar clientes no CRM)
-
-### BLOCO 5 — APRESENTAÇÃO INTERATIVA (1 pergunta + 2 sub)
-
-1. Escopo: organograma clicável Lovable / portal mockup interativo / ambos?
-1.1. Público inicial pra apresentar: empresários reuniões 1:1 / pitch coletivo / venda online?
-1.2. Setores que quer atacar primeiro?
-
-EXECUÇÃO PÓS-BLOCO 5:
-- Criar `wiki/products/apresentacao-interativa-spec.md` com escopo
-- Adicionar entry em pendencias.md: "construir apresentação interativa em sessão 2"
-
-### EXECUÇÃO FINAL (após os 5 blocos)
-
-1. Rodar lint pt-br em todos arquivos editados (regra: zero hífens/travessões `—` `–`)
-2. Atualizar `wiki/log.md` com entry "ONBOARDING <NOME> CONCLUIDO em YYYY-MM-DD"
-3. Criar `wiki/sessoes/sessao-YYYY-MM-DD.md` documentando sessão de onboarding
-4. Atualizar `wiki/hot.md`: remover linha `ONBOARDING PENDENTE`, substituir por `ONBOARDING CONCLUIDO em YYYY-MM-DD`
-5. **AUTO-LIMPEZA: apagar a seção `## PROTOCOLO DE ONBOARDING` inteira deste CLAUDE.md** (de "## PROTOCOLO DE ONBOARDING" até o final desta seção, antes da próxima `##`). Isso é crítico — o protocolo só serve uma vez.
-6. Commit: `git add . && git commit -m "feat: onboarding self-service <nome> concluido"`
-
-### MENSAGEM FINAL AO ALUNO (template)
-
-Após commit, mostrar ao aluno:
-```
-Onboarding concluído em <X> minutos.
-
-Aplicado:
-- Renomeação completa pra <nome-empresa>
-- Plano Cloud Code <plano> registrado
-- CEO IA: <nome>
-- 5 agents nicho calibrados pros 3 clientes-piloto
-- Apresentação interativa especificada
-
-Pendências humanas (você resolve fora do Cloud Code):
-[listar de pendencias.md]
-
-Próximo passo: avise Fábio pelo Telegram do Carlos que onboarding rodou. Ele te chama pra sessão 2.
-
-A regra de onboarding foi removida deste ambiente. A partir de agora seu CEO IA opera normalmente.
-```
-
-### COMPORTAMENTO EM CASO DE TRAVA
-
-Se o aluno fechar a sessão no meio:
-- Salvar estado em `wiki/operations/onboarding-progress.md` (bloco atual + respostas coletadas + adaptações executadas)
-- Ao retomar, ler progress.md e perguntar "Quer continuar do bloco X ou recomeçar?"
-
-Se erro durante adaptação automática (ex: rename falha):
-- Logar erro em `wiki/operations/pendencias.md`
-- Continuar próximo bloco — não trava
-
----
-
 ## PROTOCOLO DE ABERTURA (sessões normais — depois do onboarding)
 
 Ao iniciar conversa, o CEO faz EXATAMENTE isso, NESTA ORDEM, ANTES de responder qualquer coisa ao dono:
@@ -211,7 +65,7 @@ Se o dono responder direto sem confirmar, seguir o que ele pediu — mas a abert
 
 ## PROTOCOLO DE INGESTÃO (wiki/raw/ — quando dono diz "olha o que coloquei em wiki/raw/")
 
-Quando o dono fala "Carlos, olha o que coloquei em `wiki/raw/<subpasta>/<arquivo>`" (ou variação tipo "joguei um arquivo lá", "dá uma olhada nesse PDF", "coloquei a transcrição"), você executa este protocolo automaticamente.
+Quando o dono fala "James, olha o que coloquei em `wiki/raw/<subpasta>/<arquivo>`" (ou variação tipo "joguei um arquivo lá", "dá uma olhada nesse PDF", "coloquei a transcrição"), você executa este protocolo automaticamente.
 
 ### Estrutura de wiki/raw/
 
@@ -290,7 +144,7 @@ O CEO DEVE executar AUTOMATICAMENTE, na ordem:
 
 Antes de gerar relatório de sessão, escanear a conversa de hoje atrás de **dados estáveis** que o dono informou. Dado estável é qualquer informação que NÃO muda toda semana — ela vale pra sempre (ou pelo menos meses):
 
-- **Renomeação de agente** ("a Ana Paula a partir de agora se chama Mariana", "quero que o Carlos seja o João") → atualizar a tabela `## AGENTES DA EMPRESA AI` no CLAUDE.md COM mover/renomear arquivo correspondente em `.claude/agents/` na próxima sessão de manutenção (ou pedir confirmação pro dono se for fazer agora)
+- **Renomeação de agente** ("a Ana Paula a partir de agora se chama Mariana", "quero que o James seja o João") → atualizar a tabela `## AGENTES DA EMPRESA AI` no CLAUDE.md COM mover/renomear arquivo correspondente em `.claude/agents/` na próxima sessão de manutenção (ou pedir confirmação pro dono se for fazer agora)
 - **Criação de agente novo** pelo dono ("quero um agente pra cuidar da campanha X") → adicionar na tabela + criar `.claude/agents/[nome].md`
 - **Mudança no negócio**: produto novo, preço novo, novo nicho, mudança de localização, parceria nova → atualizar `## CONTEXTO DO NEGÓCIO`
 - **Regra/restrição nova** ("nunca tocar em X", "WordPress intocável", "não vender pra Y") → atualizar `## REGRAS INEGOCIÁVEIS DO NEGÓCIO`
@@ -516,14 +370,19 @@ Quando o dono aprova algo não óbvio → salvar em `wiki/operations/decisions.m
 ## CONTEXTO DO NEGÓCIO
 > Preenchido no onboarding e atualizado pelo CEO no PROTOCOLO DE FECHAMENTO Etapa 0 sempre que o dono informar mudança.
 
-- **Empresa:** [PREENCHER NO ONBOARDING]
-- **Nicho:** [PREENCHER NO ONBOARDING]
-- **Localização:** [PREENCHER NO ONBOARDING]
-- **Produtos/Serviços:** [PREENCHER NO ONBOARDING]
-- **Público-alvo:** [PREENCHER NO ONBOARDING]
-- **Objetivos 90 dias:** [PREENCHER NO ONBOARDING]
-- **Tom de voz:** [PREENCHER NO ONBOARDING]
-- **Dor principal:** [PREENCHER NO ONBOARDING]
+- **Dono:** Thiago doCarmo
+- **Empresa principal:** Roberts Landscape Design and Construction
+- **Nicho:** construção/landscape residencial premium (Track A) + restaurante em exit (Track Z) + parceria SaaS Invoice com sócio dev Gustavo no BR (Track B) + VPS/data center próprio (Track C)
+- **Localização:** Cape Cod / Hyannis, MA + South Shore, Massachusetts (EUA); parceria dev no Brasil
+- **Mercado:** US + BR (múltiplos)
+- **GitHub:** Thiagaoai
+- **Contato:** contact@roberts-landscape.com | +1 508 280 3770
+- **Tax ID:** pendente (EIN a preencher)
+- **Produtos/Serviços:** serviços de construção e landscape (Roberts) | SaaS Invoice multilíngue (futuro) | hospedagem VPS própria (futuro)
+- **Público-alvo:** [PREENCHER — clientes residenciais premium Cape Cod/South Shore]
+- **Objetivos 90 dias:** sair da operação de construção e do restaurante; migrar pra receita escalável de no mínimo $10.000/mês
+- **Tom de voz:** [PREENCHER]
+- **Dor principal:** preso na operação (construção + restaurante + gestão de funcionários); quer receita escalável e parar de gerenciar gente
 
 ---
 
@@ -541,19 +400,29 @@ Quando o dono aprova algo não óbvio → salvar em `wiki/operations/decisions.m
 > Restrições e regras que o dono estabeleceu sobre o negócio dele (não confundir com REGRAS INEGOCIÁVEIS gerais do CEO acima).
 > Atualizadas pelo CEO na Etapa 0 do PROTOCOLO DE FECHAMENTO.
 
-- [PREENCHER NO ONBOARDING — exemplos: "WordPress dos clientes intocável", "WHMCS não toca", "nunca falar publicamente de X cliente"]
+- **Restaurante = EXIT, NÃO automatizar.** Objetivo é vender, não otimizar a operação. Track Z (agente `exit-restaurante`).
+- **Track B (SaaS Invoice com Gustavo) está DORMENTE** até joint venture formal assinada. Não desenvolver código antes do contrato. Acordar com "acorda invoice-product-arch".
+- **Objetivo de fundo:** tirar o Thiago da operação de construção e do restaurante. Toda sugestão deve favorecer receita escalável e menos gestão de funcionários, não aprofundar o dono na operação manual.
+- **Foco semana 1:** plano FOCADO, não disperso (risco emocional alto, funcionários estressando).
 
 ---
 
 ## CONTAS E FERRAMENTAS
 > Stack técnica e canais usados pelo negócio. Atualizada pelo CEO quando dono mencionar conta/ferramenta nova.
 
+- **Empresa principal:** Roberts Landscape Design and Construction
+- **Field service / CRM / scheduling / invoice (Roberts):** Jobber
+- **Pagamento (Roberts):** Square
+- **Comunicação com lead/cliente:** telefone + SMS direto (sem automação ainda)
+- **Volume de leads Roberts:** 10 a 30/mês
+- **GitHub:** Thiagaoai
+- **Email:** contact@roberts-landscape.com | **Telefone:** +1 508 280 3770
+- **Stack dev/AI do dono:** Cursor, Claude Code, Codex, Paperclip (Hostinger Docker), Ollama, DeepSeek, Qwen, Hermes, N8N, Composio, Matomo
 - **Site principal:** [PREENCHER]
-- **CRM:** [PREENCHER]
-- **Email marketing:** [PREENCHER]
 - **Ads:** [PREENCHER — Meta? Google? LinkedIn?]
 - **Redes sociais ativas:** [PREENCHER — handles]
-- **Outras ferramentas:** [PREENCHER]
+
+> NOTA: stack real (Jobber + Square) difere do que os agentes de nicho assumem (GHL + QuickBooks). Ver `wiki/operations/integracoes.md` e pendências.
 
 ---
 
@@ -565,7 +434,7 @@ Cada funcionário é um comando. Digite `/nome` pra ativá-lo:
 ### Agentes (43 funcionários)
 | Comando | Cargo |
 |---------|-------|
-| `/carlos` | CEO / Orquestrador |
+| `/james` | CEO / Orquestrador |
 | `/ana-paula` | Carrosselista Instagram |
 | `/lucas` | Video Creator |
 | `/marina` | Social Media Strategist |

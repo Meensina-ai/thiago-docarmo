@@ -11,7 +11,7 @@ Este workflow atende a **[SUA EMPRESA]** — Software House AI-Native + Agência
 
 **Clientes em atenção:** [especialista-exemplo-1], [especialista-exemplo-2], [cliente-exemplo] [empresa-cliente], [DONO], [SUA EMPRESA].
 
-**CEO da operação de IA:** [CEO] (nome da [DONO] pro agente `/carlos`).
+**CEO da operação de IA:** [CEO] (nome da [DONO] pro agente `/james`).
 
 **Regra central:** tecnologia + estratégia + IA sempre juntas.
 
@@ -55,7 +55,7 @@ Eduardo notifica o time assim que contrato é assinado. Entrega:
 - Ficha-resumo com: braço, ticket, prazo, time alocado, condições de pagamento
 
 ### Fase 2 — Kickoff Interno (Dia 1, até 24h depois da Fase 1)
-**Agente líder:** [[../agents/carlos]] ([CEO])
+**Agente líder:** [[../agents/james]] ([CEO])
 
 [CEO] monta o time do projeto e dispara kickoff interno. Verifica:
 - Time alocado disponível pro cronograma
@@ -81,7 +81,7 @@ Copy do welcome pack: tom premium, sem hífens (—) em copy pública, acentuaç
 Entrega: `wiki/clients/[cliente]/welcome-pack-enviado.md` com timestamp.
 
 ### Fase 4 — Kickoff com Cliente (Dia 3–4)
-**Agentes envolvidos:** [[../agents/carlos]] ([CEO]), [[../agents/danilo]] (Danilo) + agente técnico/estratégico do projeto
+**Agentes envolvidos:** [[../agents/james]] ([CEO]), [[../agents/danilo]] (Danilo) + agente técnico/estratégico do projeto
 
 Call de kickoff (60–90 min) com cliente pra:
 - Alinhar expectativas (revisar escopo, prazos, entregáveis, responsabilidades)
@@ -104,7 +104,7 @@ Entrega: `wiki/clients/[cliente]/acessos-configurados.md`
 **Agente líder:** varia por braço:
 - **Software House:** [[../agents/thiago]] — entrega primeiro artefato (arquitetura validada, wireframe, MVP primeira tela)
 - **Lançamento:** [[../agents/marina]] + [[../agents/ana-paula]] — entregam calendário editorial + primeiros carrosséis ou [[../agents/andre]] — entrega mapa do funil aprovado
-- **Consultoria:** [[../agents/carlos]] ([CEO]) ou [[../agents/patricia]] — entrega primeira sessão de AI Business Architecture ou módulo inicial de mentoria
+- **Consultoria:** [[../agents/james]] ([CEO]) ou [[../agents/patricia]] — entrega primeira sessão de AI Business Architecture ou módulo inicial de mentoria
 
 Cliente vê progresso real em até 7 dias. Isso blinda a confiança.
 
@@ -128,9 +128,9 @@ Entrega: cliente ativo no dashboard, primeira check-in agendada.
 | Fase | Agente líder | Apoio |
 |------|--------------|-------|
 | 1. Recebimento | [[../agents/eduardo]] | — |
-| 2. Kickoff Interno | [[../agents/carlos]] ([CEO]) | Time do projeto |
-| 3. Welcome Pack | [[../agents/danilo]] | [[../agents/carlos]] revisa copy |
-| 4. Kickoff Cliente | [[../agents/carlos]] + [[../agents/danilo]] | Agente técnico/estratégico |
+| 2. Kickoff Interno | [[../agents/james]] ([CEO]) | Time do projeto |
+| 3. Welcome Pack | [[../agents/danilo]] | [[../agents/james]] revisa copy |
+| 4. Kickoff Cliente | [[../agents/james]] + [[../agents/danilo]] | Agente técnico/estratégico |
 | 5. Configuração & Acesso | varia por braço | — |
 | 6. Primeira Entrega | varia por braço | — |
 | 7. Setup Retenção | [[../agents/isabela]] | — |

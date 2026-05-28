@@ -38,7 +38,7 @@ Invoca o **Arquiteto** da empresa AI pra criar um agente novo no formato e local
 
 ## Importante: como o agente novo entra no time
 
-Voce **sempre fala com o CEO** (Carlos ou nome equivalente). O agente novo criado entra na "visao" do CEO automaticamente — Carlos sabe que ele existe e pode chamar quando voce pedir.
+Voce **sempre fala com o CEO** (James ou nome equivalente). O agente novo criado entra na "visao" do CEO automaticamente — James sabe que ele existe e pode chamar quando voce pedir.
 
 Voce **nunca chama o agente direto** — sempre via CEO.
 
@@ -53,7 +53,7 @@ Voce **nunca chama o agente direto** — sempre via CEO.
 
 Se voce quer agente automatico (sem voce abrir o Claude Code), Arquiteto te avisa e gera doc com instrucao de setup nuvem.
 
-## Instrucoes pra Carlos (orquestrador)
+## Instrucoes pra James (orquestrador)
 
 Quando o aluno digita `/criar-agente`:
 

@@ -1,4 +1,4 @@
-# Pendências em Aberto — [EMPRESA]
+# Pendências em Aberto — Roberts Landscape / Empresa AI do Thiago
 
 > Lista viva. Atualizada no fechamento de cada sessão. Lida na abertura.
 > Ordem: 🔴 críticas → 🟡 médias → 🟢 baixas
@@ -8,15 +8,18 @@
 
 ### 🔴 Críticas
 
-- [ ] (vazio — adicionado conforme sessões rodam)
+- [ ] Refazer agente `construcao-landscape-pm` + MCP `construcao-landscape-mcp` pra stack REAL **Jobber + Square** (estavam desenhados pra GoHighLevel + QuickBooks + Google Calendar). — surgiu no onboarding 2026-05-28
 
 ### 🟡 Médias
 
-- [ ] (vazio)
+- [ ] Construir apresentação interativa pro GTM do SaaS/VPS em sessão 2 (spec em `wiki/products/apresentacao-interativa-spec.md`)
+- [ ] Definir público-alvo detalhado da Roberts (ICP residencial premium Cape Cod/South Shore) — campo [PREENCHER] no CLAUDE.md
+- [ ] Preencher Tax ID (EIN) da Roberts no CLAUDE.md quando disponível
 
 ### 🟢 Baixas
 
-- [ ] (vazio)
+- [ ] Definir tom de voz da marca (campo [PREENCHER] no CLAUDE.md)
+- [ ] Limpar drift da tabela `## AGENTES DA EMPRESA AI` (lista nomes como /ana-paula, /marina, /thiago, /andre, /bruno que não batem com arquivos reais em .claude/agents/)
 
 ## Resolvidas
 
