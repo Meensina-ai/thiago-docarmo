@@ -8,7 +8,6 @@
 
 ### 🔴 Críticas
 
-- [ ] **Backup na nuvem quebrado:** remote `github.com/Meensina-ai/thiago-docarmo` não existe / sem acesso. `git push` falha. Criar o repo remoto ou corrigir o `git remote set-url`. Avisar Fábio (suporte BA). — surgiu no onboarding 2026-05-28
 - [ ] Refazer agente `construcao-landscape-pm` + MCP `construcao-landscape-mcp` pra stack REAL **Jobber + Square** (estavam desenhados pra GoHighLevel + QuickBooks + Google Calendar). — surgiu no onboarding 2026-05-28
 
 ### 🟡 Médias
@@ -24,7 +23,7 @@
 
 ## Resolvidas
 
-(vazio)
+- ✅ 2026-05-28 — Backup na nuvem. Não era repo inexistente: `Meensina-ai/thiago-docarmo` é privado e o git tentava acesso anônimo (GitHub responde "Repository not found" pra repo privado sem auth). Resolvido com `gh auth setup-git` (passa a usar o token do gh como credential helper). Remote main confirmado == local main.
 
 ---
 
