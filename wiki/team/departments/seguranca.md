@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - seguranca
+---
+
 # Segurança
 
 > Hub do departamento Segurança.

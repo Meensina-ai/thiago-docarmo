@@ -1,3 +1,10 @@
+---
+tags:
+  - squad
+  - conteudo
+  - vendas
+---
+
 # Copy Squad
 
 > 23 copywriters lendários (Schwartz, Halbert, Carlton). Use pra sales letter, VSL, headlines.

@@ -1,0 +1,187 @@
+/* ============================================================
+   EMPRESA AI — Cores por Departamento
+   Vault: wiki/  |  Thiago doCarmo
+   ============================================================ */
+
+/* ---- VARIÁVEIS DE COR ---- */
+:root {
+  --dept-ceo:          #FFD700;
+  --dept-chief:        #9B59B6;
+  --dept-conteudo:     #27AE60;
+  --dept-trafego:      #E67E22;
+  --dept-vendas:       #E74C3C;
+  --dept-produto:      #3498DB;
+  --dept-engenharia:   #1ABC9C;
+  --dept-estrategia:   #8E44AD;
+  --dept-seguranca:    #F39C12;
+  --dept-nicho:        #795548;
+  --dept-squad:        #E91E63;
+  --dept-comunicacao:  #00BCD4;
+}
+
+/* ===========================================================
+   FILE EXPLORER — cor no título do arquivo por departamento
+   =========================================================== */
+
+/* CEO */
+.nav-file-title[data-path="team/agents/ceo.md"],
+.nav-file-title[data-path="team/agents/james.md"] {
+  color: var(--dept-ceo) !important;
+  font-weight: 700;
+}
+
+/* CHIEFS */
+.nav-file-title[data-path="team/agents/advisory-chief.md"],
+.nav-file-title[data-path="team/agents/brand-chief.md"],
+.nav-file-title[data-path="team/agents/copy-chief.md"],
+.nav-file-title[data-path="team/agents/data-chief.md"],
+.nav-file-title[data-path="team/agents/design-chief.md"],
+.nav-file-title[data-path="team/agents/hormozi-chief.md"],
+.nav-file-title[data-path="team/agents/story-chief.md"],
+.nav-file-title[data-path="team/agents/traffic-chief.md"],
+.nav-file-title[data-path="team/agents/arquiteto.md"] {
+  color: var(--dept-chief) !important;
+  font-weight: 600;
+}
+
+/* CONTEÚDO */
+.nav-file-title[data-path="team/agents/beatriz.md"],
+.nav-file-title[data-path="team/agents/daniela.md"],
+.nav-file-title[data-path="team/agents/diego.md"],
+.nav-file-title[data-path="team/agents/gustavo.md"],
+.nav-file-title[data-path="team/agents/instagram-scraper.md"],
+.nav-file-title[data-path="team/agents/larissa.md"],
+.nav-file-title[data-path="team/agents/lucas.md"],
+.nav-file-title[data-path="team/agents/mariana.md"],
+.nav-file-title[data-path="team/agents/rafael.md"],
+.nav-file-title[data-path="team/agents/substack-writer.md"],
+.nav-file-title[data-path="team/agents/twitter-scraper.md"],
+.nav-file-title[data-path="team/agents/youtube-transcriber.md"] {
+  color: var(--dept-conteudo) !important;
+}
+
+/* TRÁFEGO */
+.nav-file-title[data-path="team/agents/aline.md"],
+.nav-file-title[data-path="team/agents/camila.md"],
+.nav-file-title[data-path="team/agents/fernando.md"],
+.nav-file-title[data-path="team/agents/google-ads-manager.md"],
+.nav-file-title[data-path="team/agents/google-my-business.md"],
+.nav-file-title[data-path="team/agents/henrique.md"],
+.nav-file-title[data-path="team/agents/meta-ads-manager.md"] {
+  color: var(--dept-trafego) !important;
+}
+
+/* VENDAS */
+.nav-file-title[data-path="team/agents/crm-manager.md"],
+.nav-file-title[data-path="team/agents/eduardo.md"],
+.nav-file-title[data-path="team/agents/isabela.md"],
+.nav-file-title[data-path="team/agents/juliana.md"],
+.nav-file-title[data-path="team/agents/nina.md"],
+.nav-file-title[data-path="team/agents/pedro.md"],
+.nav-file-title[data-path="team/agents/rodrigo.md"],
+.nav-file-title[data-path="team/agents/tatiana.md"],
+.nav-file-title[data-path="team/agents/valeria.md"],
+.nav-file-title[data-path="team/agents/vinicius.md"] {
+  color: var(--dept-vendas) !important;
+}
+
+/* PRODUTO */
+.nav-file-title[data-path="team/agents/carolina.md"],
+.nav-file-title[data-path="team/agents/danilo.md"],
+.nav-file-title[data-path="team/agents/gabriel.md"],
+.nav-file-title[data-path="team/agents/patricia.md"],
+.nav-file-title[data-path="team/agents/product-builder.md"],
+.nav-file-title[data-path="team/agents/renata.md"] {
+  color: var(--dept-produto) !important;
+}
+
+/* ENGENHARIA */
+.nav-file-title[data-path="team/agents/felipe.md"],
+.nav-file-title[data-path="team/agents/skill-creator.md"],
+.nav-file-title[data-path="team/agents/victor.md"] {
+  color: var(--dept-engenharia) !important;
+}
+
+/* ESTRATÉGIA */
+.nav-file-title[data-path="team/agents/marcos.md"] {
+  color: var(--dept-estrategia) !important;
+}
+
+/* SEGURANÇA */
+.nav-file-title[data-path="team/agents/cristina.md"] {
+  color: var(--dept-seguranca) !important;
+}
+
+/* COMUNICAÇÃO */
+.nav-file-title[data-path="team/agents/sofia.md"] {
+  color: var(--dept-comunicacao) !important;
+}
+
+/* NICHO */
+.nav-file-title[data-path="team/agents/permit-scraper.md"],
+.nav-file-title[data-path*="team/agents/nicho/"] {
+  color: var(--dept-nicho) !important;
+}
+
+/* ===========================================================
+   PASTAS DE DEPARTAMENTO — cor no título da pasta
+   =========================================================== */
+.nav-folder-title[data-path="team/agents"] {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.nav-folder-title[data-path="team/departments"] {
+  font-weight: 700;
+}
+
+.nav-folder-title[data-path="team/agents/nicho"] {
+  color: var(--dept-nicho) !important;
+  font-weight: 600;
+}
+
+/* ===========================================================
+   PASTAS WIKI DE 1° NÍVEL — identidade visual
+   =========================================================== */
+.nav-folder-title[data-path="raw"],
+.nav-folder-title[data-path="raw/transcricoes"],
+.nav-folder-title[data-path="raw/audios"],
+.nav-folder-title[data-path="raw/docs"],
+.nav-folder-title[data-path="raw/reunioes"],
+.nav-folder-title[data-path="raw/screenshots"],
+.nav-folder-title[data-path="raw/artigos"],
+.nav-folder-title[data-path="raw/concorrentes"],
+.nav-folder-title[data-path="raw/ferramentas"] {
+  color: #78909C !important;
+  font-style: italic;
+}
+
+/* ===========================================================
+   GRAPH VIEW — bolinha de departamento (aplicado via tag)
+   Não é CSS direto — ver colorGroups em graph.json
+   As tags abaixo são visíveis no tag pane com suas cores.
+   =========================================================== */
+
+/* Tag pane — cor de cada tag de departamento */
+.tag-pane-tag-count[data-tag="ceo"]          { color: var(--dept-ceo); }
+.tag-pane-tag-count[data-tag="chief"]        { color: var(--dept-chief); }
+.tag-pane-tag-count[data-tag="conteudo"]     { color: var(--dept-conteudo); }
+.tag-pane-tag-count[data-tag="trafego"]      { color: var(--dept-trafego); }
+.tag-pane-tag-count[data-tag="vendas"]       { color: var(--dept-vendas); }
+.tag-pane-tag-count[data-tag="produto"]      { color: var(--dept-produto); }
+.tag-pane-tag-count[data-path="engenharia"]  { color: var(--dept-engenharia); }
+.tag-pane-tag-count[data-tag="estrategia"]   { color: var(--dept-estrategia); }
+.tag-pane-tag-count[data-tag="seguranca"]    { color: var(--dept-seguranca); }
+.tag-pane-tag-count[data-tag="nicho"]        { color: var(--dept-nicho); }
+.tag-pane-tag-count[data-tag="squad"]        { color: var(--dept-squad); }
+.tag-pane-tag-count[data-tag="comunicacao"]  { color: var(--dept-comunicacao); }
+
+/* ===========================================================
+   BADGES de departamento em frontmatter (Properties panel)
+   =========================================================== */
+.metadata-property[data-property-key="departamento"] .metadata-property-value {
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: rgba(var(--color-accent-rgb), 0.15);
+}

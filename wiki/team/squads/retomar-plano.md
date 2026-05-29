@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Retomar Plano
 
 > Squad retomar-plano

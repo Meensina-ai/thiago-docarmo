@@ -1,3 +1,10 @@
+---
+tags:
+  - trafego
+  - nicho
+  - agente
+---
+
 # Google My Business
 
 > **Função:** Gestão de Google Business Profile (GBP) pra negócios locais. Use quando precisar auditar perfil, otimizar categorias/descrição, criar posts semanais, responder reviews, analisar concorrência local ou 

@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Gerar Perfil Do Negocio
 
 > Squad gerar-perfil-do-negocio

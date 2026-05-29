@@ -1,3 +1,10 @@
+---
+tags:
+  - produto
+  - estrategia
+  - agente
+---
+
 # Renata
 
 > **Função:** Product Ideator pra empresas que lançam infoprodutos, SaaS ou produtos por assinatura. Use quando precisar pesquisar oportunidade de mercado, mapear dores visíveis e ocultas do público, criar personas

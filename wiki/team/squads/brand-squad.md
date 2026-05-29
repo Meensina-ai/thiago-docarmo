@@ -1,3 +1,10 @@
+---
+tags:
+  - squad
+  - estrategia
+  - conteudo
+---
+
 # Brand Squad
 
 > 15 estrategistas de marca (Kapferer, Neumeier, Aaker, Ries). Use pra positioning, naming.

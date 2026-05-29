@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Novo Plano De Acao
 
 > Squad novo-plano-de-acao

@@ -1,3 +1,9 @@
+---
+tags:
+  - conteudo
+  - agente
+---
+
 # Instagram Scraper
 
 > **Função:** Curadoria automatizada de conteúdo Instagram pra coletar referências, ideias e tendências de nicho. Use quando precisar analisar perfis de concorrentes, mapear formatos que estão funcionando, identifi

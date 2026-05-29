@@ -1,3 +1,10 @@
+---
+tags:
+  - vendas
+  - chief
+  - agente
+---
+
 # Hormozi Chief
 
 > **Função:** Chief da Hormozi Squad. Use quando a tarefa exige construção de oferta (Grand Slam Offer), Value Equation, Core 4 Leads, pricing psychology, escalada de receita ($100K → $1M → $10M+), ou aplicação dir

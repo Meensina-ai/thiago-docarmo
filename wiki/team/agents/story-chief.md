@@ -1,3 +1,10 @@
+---
+tags:
+  - conteudo
+  - chief
+  - agente
+---
+
 # Story Chief
 
 > **Função:** Chief do Storytelling Squad. Use quando a tarefa exige estrutura narrativa rigorosa: pitch deck, talk/keynote, brand story, video script, sales letter, customer story, founder story, manifesto. Chief 

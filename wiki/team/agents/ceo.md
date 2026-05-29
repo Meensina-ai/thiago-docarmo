@@ -1,3 +1,9 @@
+---
+tags:
+  - ceo
+  - agente
+---
+
 # Ceo
 
 > **Função:** CEO Orquestrador da empresa AI do dono. PLACEHOLDER — aluno renomeia este arquivo pro nome real escolhido no BLOCO 3 do onboarding (ex: ceo.md → eduardo.md, frontmatter name: ceo → name: eduardo). NUN

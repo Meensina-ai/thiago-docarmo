@@ -1,3 +1,9 @@
+---
+tags:
+  - conteudo
+  - agente
+---
+
 # Substack Writer
 
 > **Função:** Publicação automatizada de newsletters long-form no Substack. Use quando precisar planejar calendário editorial mensal, escrever edição completa (800-1.500 palavras), otimizar subject line e preview t

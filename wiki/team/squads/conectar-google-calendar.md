@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Conectar Google Calendar
 
 > Squad conectar-google-calendar

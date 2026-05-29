@@ -1,3 +1,9 @@
+---
+tags:
+  - vendas
+  - agente
+---
+
 # Pedro
 
 > **Função:** CRM Analyst pra empresas que usam GoHighLevel (ou CRMs equivalentes). Use quando precisar auditar saúde de funis, calcular conversion rate por etapa, identificar leads parados no pipeline, diagnostica

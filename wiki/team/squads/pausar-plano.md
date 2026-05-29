@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Pausar Plano
 
 > Squad pausar-plano

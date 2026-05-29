@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - estrategia
+---
+
 # Estratégia
 
 > Hub do departamento Estratégia.

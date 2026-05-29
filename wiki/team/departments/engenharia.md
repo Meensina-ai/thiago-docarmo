@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - engenharia
+---
+
 # Engenharia e Dev
 
 > Hub do departamento Engenharia e Dev.

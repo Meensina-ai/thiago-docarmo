@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - conteudo
+---
+
 # Storytelling
 
 > 12 mestres da narrativa (Campbell, Snyder, Harmon, Duarte). Use pra pitch, talk, brand story.

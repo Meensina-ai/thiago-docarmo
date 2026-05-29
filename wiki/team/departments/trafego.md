@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - trafego
+---
+
 # Tráfego e Ads
 
 > Hub do departamento Tráfego e Ads.

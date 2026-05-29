@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - trafego
+---
+
 # Traffic Masters
 
 > 16 especialistas em tráfego pago (Molly Pittman, Ralph Burns, Kasim Aslam). Use pra Meta, Google, TikTok.

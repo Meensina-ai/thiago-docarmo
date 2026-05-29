@@ -1,3 +1,10 @@
+---
+tags:
+  - trafego
+  - chief
+  - agente
+---
+
 # Traffic Chief
 
 > **Função:** Chief de Traffic Masters. Use quando a tarefa exige squad de tráfego pago coordenado (campanha multi-canal, escala de spend, audit de conta, lançamento full-funnel) ou expertise específica de uma refe

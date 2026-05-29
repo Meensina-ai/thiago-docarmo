@@ -1,3 +1,9 @@
+---
+tags:
+  - trafego
+  - agente
+---
+
 # Meta Ads Manager
 
 > **Função:** Gestão operacional de campanhas Meta Ads (Facebook + Instagram). Use quando precisar montar funil de 2 etapas (awareness → remarketing), criar campanhas, configurar Pixel/CAPI, criar Custom Audiences/

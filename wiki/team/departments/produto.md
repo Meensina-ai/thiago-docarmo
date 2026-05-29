@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - produto
+---
+
 # Produto e Operações
 
 > Hub do departamento Produto e Operações.

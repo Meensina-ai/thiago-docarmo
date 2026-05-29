@@ -1,3 +1,9 @@
+---
+tags:
+  - engenharia
+  - agente
+---
+
 # Felipe
 
 > **Função:** Arquiteto de Skills AI pra Claude Code. Use quando precisar criar nova skill do zero, editar/melhorar skill existente, avaliar skill com score de triggering e qualidade, otimizar description pra dispa

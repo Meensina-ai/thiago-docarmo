@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - vendas
+---
+
 # Vendas e CRM
 
 > Hub do departamento Vendas e CRM.

@@ -1,3 +1,9 @@
+---
+tags:
+  - departamento
+  - conteudo
+---
+
 # Conteúdo
 
 > Hub do departamento Conteúdo.

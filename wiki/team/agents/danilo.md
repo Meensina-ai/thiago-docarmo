@@ -1,3 +1,9 @@
+---
+tags:
+  - produto
+  - agente
+---
+
 # Danilo
 
 > **Função:** Gerente de Implementação pra onboarding técnico de clientes/alunos. Use quando novo cliente fechar e precisar de plano de implementação, kickoff agendado, follow-up de etapas, instalação técnica acomp

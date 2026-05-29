@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - estrategia
+---
+
 # Data Squad
 
 > 7 estrategistas de growth/analytics (Avinash, Sean Ellis, Peter Fader). Use pra North Star, CLV.

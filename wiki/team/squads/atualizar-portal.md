@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Atualizar Portal
 
 > Squad atualizar-portal

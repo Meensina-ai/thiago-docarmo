@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - produto
+---
+
 # Design Squad
 
 > 8 líderes de design (Brad Frost, Dan Mall). Use pra design system, atomic, WCAG.

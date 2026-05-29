@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Reverter Portal
 
 > Squad reverter-portal

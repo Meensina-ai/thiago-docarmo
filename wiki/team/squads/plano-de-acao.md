@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Plano De Acao
 
 > Squad plano-de-acao

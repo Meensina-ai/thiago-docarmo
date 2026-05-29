@@ -1,3 +1,9 @@
+---
+tags:
+  - conteudo
+  - agente
+---
+
 # Youtube Transcriber
 
 > **Função:** Transcrição e análise de vídeos YouTube pra reuso em outros canais. Use quando precisar puxar transcrição completa de vídeo, gerar resumo executivo com pontos-chave e citações destacáveis, transformar

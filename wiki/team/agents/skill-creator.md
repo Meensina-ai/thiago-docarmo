@@ -1,3 +1,9 @@
+---
+tags:
+  - engenharia
+  - agente
+---
+
 # Skill Creator
 
 > **Função:** Atalho lightweight pra criar skill nova no Claude Code rapidamente. Use quando precisar gerar SKILL.md básico em menos de 10 minutos, prototipar skill antes de auditoria completa, criar skill simples 

@@ -1,0 +1,75 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#ceo",
+      "color": { "a": 1, "rgb": 16766720 }
+    },
+    {
+      "query": "tag:#chief",
+      "color": { "a": 1, "rgb": 10181046 }
+    },
+    {
+      "query": "tag:#conteudo",
+      "color": { "a": 1, "rgb": 2600544 }
+    },
+    {
+      "query": "tag:#trafego",
+      "color": { "a": 1, "rgb": 15105570 }
+    },
+    {
+      "query": "tag:#vendas",
+      "color": { "a": 1, "rgb": 15158332 }
+    },
+    {
+      "query": "tag:#produto",
+      "color": { "a": 1, "rgb": 3447003 }
+    },
+    {
+      "query": "tag:#engenharia",
+      "color": { "a": 1, "rgb": 1752220 }
+    },
+    {
+      "query": "tag:#estrategia",
+      "color": { "a": 1, "rgb": 9323693 }
+    },
+    {
+      "query": "tag:#seguranca",
+      "color": { "a": 1, "rgb": 15965202 }
+    },
+    {
+      "query": "tag:#nicho",
+      "color": { "a": 1, "rgb": 7951688 }
+    },
+    {
+      "query": "tag:#squad",
+      "color": { "a": 1, "rgb": 15277667 }
+    },
+    {
+      "query": "tag:#comunicacao",
+      "color": { "a": 1, "rgb": 48340 }
+    },
+    {
+      "query": "tag:#departamento",
+      "color": { "a": 1, "rgb": 6323595 }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.892803372891111,
+  "close": false
+}

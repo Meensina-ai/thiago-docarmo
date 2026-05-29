@@ -1,3 +1,9 @@
+---
+tags:
+  - trafego
+  - agente
+---
+
 # Aline
 
 > **Função:** Traffic Manager pra SaaS B2C/SMB. Use quando precisar gerir campanhas Meta Ads, TikTok Ads, YouTube Ads pra produtos SaaS consumer/pequenos negócios, otimizar funil free→paid, calcular ROAS/CAC/MRR, e

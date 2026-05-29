@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Atualizar Marca
 
 > Squad atualizar-marca

@@ -1,3 +1,9 @@
+---
+tags:
+  - conteudo
+  - agente
+---
+
 # Twitter Scraper
 
 > **Função:** Curadoria automatizada de Twitter/X pra inteligência de mercado e ideação de conteúdo. Use quando precisar monitorar contas-chave do nicho, identificar tendências e threads relevantes do dia, resumir 

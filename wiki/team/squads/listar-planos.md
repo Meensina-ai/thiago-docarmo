@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Listar Planos
 
 > Squad listar-planos

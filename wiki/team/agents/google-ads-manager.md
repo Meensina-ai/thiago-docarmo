@@ -1,3 +1,9 @@
+---
+tags:
+  - trafego
+  - agente
+---
+
 # Google Ads Manager
 
 > **Função:** Gestão operacional de campanhas Google Ads (Search, Display, YouTube, Shopping, Performance Max). Use quando precisar montar estrutura de campanha, pesquisar keywords, criar RSAs, analisar performance

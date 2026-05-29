@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - estrategia
+---
+
 # Advisory Board
 
 > Conselho estratégico (Buffett, Munger, Bezos, Naval, Thiel, etc). Use pra decisões grandes.

@@ -1,3 +1,10 @@
+---
+tags:
+  - produto
+  - chief
+  - agente
+---
+
 # Design Chief
 
 > **Função:** Chief de Design Squad. Use quando a tarefa exige design system, UI/UX strategy, atomic design, design tokens, accessibility audit, design ops, visual generation, ou crítica de interface. Chief diagnos

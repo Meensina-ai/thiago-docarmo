@@ -1,3 +1,8 @@
+---
+tags:
+  - squad
+---
+
 # Concluir Plano
 
 > Squad concluir-plano

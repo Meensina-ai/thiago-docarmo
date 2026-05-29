@@ -1,3 +1,9 @@
+---
+tags:
+  - vendas
+  - agente
+---
+
 # Crm Manager
 
 > **Função:** Gestão operacional de pipeline de leads em CRM (GoHighLevel, HubSpot, Pipedrive, Close, Zoho ou wiki como banco). Use quando precisar capturar/classificar leads, montar follow-up automático, criar est

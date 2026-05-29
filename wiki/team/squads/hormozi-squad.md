@@ -1,3 +1,9 @@
+---
+tags:
+  - squad
+  - vendas
+---
+
 # Hormozi Squad
 
 > 16 personas Alex Hormozi (Grand Slam Offer, $100M Offers/Leads). Use pra oferta + escala.

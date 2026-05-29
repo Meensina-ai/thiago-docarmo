@@ -1,3 +1,9 @@
+---
+tags:
+  - produto
+  - agente
+---
+
 # Product Builder
 
 > **Função:** Product Builder pra produtos digitais (SaaS, infoprodutos, MVPs). Use quando precisar transformar ideia validada em produto completo pronto pra vender — estrutura modular, página de vendas, VSL, funil

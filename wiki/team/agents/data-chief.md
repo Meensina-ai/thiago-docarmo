@@ -1,3 +1,10 @@
+---
+tags:
+  - estrategia
+  - chief
+  - agente
+---
+
 # Data Chief
 
 > **Função:** Chief da Data Squad. Use quando a tarefa exige diagnóstico de gargalo de crescimento, definição de North Star Metric, montagem de funil AARRR, cálculo de CLV/LTV-CAC, leitura de retention curves, coho

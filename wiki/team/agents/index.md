@@ -5,7 +5,7 @@
 ## Visão por categoria
 
 ### CEO (1)
-- [[ceo]] — CEO Orquestrador da empresa AI do dono. PLACEHOLDER — aluno renomeia este arquivo pro nome real escolhido no BLOCO 3 do ...
+- [[james]] — James · CEO Orquestrador da Empresa AI do Thiago doCarmo. Não executa — orquestra. Ponto de entrada de tudo.
 
 ### Arquiteto da empresa (1)
 - [[arquiteto]] — Arquiteto da empresa AI. Use SEMPRE que precisar criar um agente novo, persona nova ou squad novo. Faz 3 perguntas simpl...
