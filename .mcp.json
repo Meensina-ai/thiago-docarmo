@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "fal": {
+      "command": "npx",
+      "args": ["-y", "@fal-ai/mcp"],
+      "env": {
+        "FAL_KEY": "YOUR_FAL_KEY_HERE"
+      }
+    },
+    "runway": {
+      "command": "npx",
+      "args": ["-y", "@runwayml/mcp-server"],
+      "env": {
+        "RUNWAY_API_SECRET": "YOUR_RUNWAY_API_SECRET_HERE"
+      }
+    },
+    "heygen": {
+      "command": "npx",
+      "args": ["-y", "@heygen/mcp"],
+      "env": {
+        "HEYGEN_API_KEY": "YOUR_HEYGEN_API_KEY_HERE"
+      }
+    },
+    "freepik": {
+      "command": "npx",
+      "args": ["-y", "@freepik/mcp-server-freepik"],
+      "env": {
+        "FREEPIK_API_KEY": "YOUR_FREEPIK_API_KEY_HERE"
+      }
+    }
+  }
+}
