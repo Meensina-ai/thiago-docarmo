@@ -12,6 +12,7 @@
 
 ### 🟡 Médias
 
+- [ ] **Captação Roberts — executar plano** ([[clients/roberts-landscape/plano-captacao-leads]]). Decisão do dono 2026-06-13: atacar mais leads via GBP + Ads + Permits. Próximos: piloto permits 2 sem (Osterville/Chatham/Cohasset/Hingham); liberar acesso GBP + Google Ads; card de fotos pra carta de mail.
 - [ ] Construir apresentação interativa pro GTM do SaaS/VPS em sessão 2 (spec em `wiki/products/apresentacao-interativa-spec.md`)
 - [ ] Definir público-alvo detalhado da Roberts (ICP residencial premium Cape Cod/South Shore) — campo [PREENCHER] no CLAUDE.md
 - [ ] Preencher Tax ID (EIN) da Roberts no CLAUDE.md quando disponível
