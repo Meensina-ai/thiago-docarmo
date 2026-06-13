@@ -25,6 +25,7 @@
 - [clients/roberts-landscape/perfil.md](clients/roberts-landscape/perfil.md) — Roberts Landscape (principal · Track A)
 - [clients/roberts-landscape/plano-captacao-leads.md](clients/roberts-landscape/plano-captacao-leads.md) — Plano de captação (GBP + Ads + Permits · assets prontos)
 - [clients/roberts-landscape/plano-google-ads.md](clients/roberts-landscape/plano-google-ads.md) — Plano Google Ads (LSA + Search)
+- [clients/roberts-landscape/motor-de-vendas.md](clients/roberts-landscape/motor-de-vendas.md) — Motor de vendas (lead → venda → pago · funil + follow-up)
 - [clients/dockplusai/perfil.md](clients/dockplusai/perfil.md) — DockPlus AI Solutions (agência de automação IA · Track D)
 
 ## Equipe — Agentes
