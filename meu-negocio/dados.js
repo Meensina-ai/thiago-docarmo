@@ -25,7 +25,7 @@
 
 window.DADOS_NEGOCIO = {
   versao: "2.0.0",
-  ultima_atualizacao: "2026-05-08T00:00:00Z",
+  ultima_atualizacao: "2026-06-13T00:00:00Z",
 
   /**
    * Identificação básica da empresa. Preenchida por /gerar-perfil-do-negocio.
@@ -98,7 +98,16 @@ window.DADOS_NEGOCIO = {
    *     cargo: "Social Media Strategist"
    *   }
    */
-  agentes: {},
+  agentes: {
+    rodrigo: {
+      status: "ocioso",
+      plano: null,
+      task_atual: null,
+      inicio: "2026-06-13T00:00:00Z",
+      ultima_entrega: "meu-negocio/entregas/relatorios/2026-06-13-plymouth-prospeccao-e-playbook-fechamento.md",
+      cargo: "Sales Intelligence"
+    }
+  },
 
   /**
    * Multi-planos de ação. Cada plano é uma pasta em planos-de-acao/<slug>/.
@@ -135,7 +144,18 @@ window.DADOS_NEGOCIO = {
    *     id, tipo, titulo, caminho, agente, plano (slug), task_id, criado_em
    *   }
    */
-  entregas: [],
+  entregas: [
+    {
+      id: "ent-rodrigo-2026-06-13-plymouth",
+      tipo: "relatorio-vendas",
+      titulo: "Expansão Plymouth (prospecção) + Playbook de fechamento premium",
+      caminho: "meu-negocio/entregas/relatorios/2026-06-13-plymouth-prospeccao-e-playbook-fechamento.md",
+      agente: "rodrigo",
+      plano: null,
+      task_id: null,
+      criado_em: "2026-06-13T00:00:00Z"
+    }
+  ],
 
   /**
    * Métricas agregadas do plano ATIVO. Recalculadas a cada update.
@@ -148,12 +168,19 @@ window.DADOS_NEGOCIO = {
     em_andamento: 0,
     a_fazer: 0,
     progresso_pct: 0,
-    total_entregas: 0
+    total_entregas: 1
   },
 
   /**
    * Últimas 20 atividades pro painel. Agregado de todos os planos.
    * Cada entrada: { timestamp, agente, plano (slug), acao_resumida }
    */
-  atividade_recente: []
+  atividade_recente: [
+    {
+      timestamp: "2026-06-13T00:00:00Z",
+      agente: "rodrigo",
+      plano: null,
+      acao_resumida: "Mapeou prospecção premium em Plymouth (Pinehills + waterfront, portal de permits OpenGov) e entregou playbook de qualificação/fechamento."
+    }
+  ]
 };
