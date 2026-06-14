@@ -13,3 +13,6 @@ Dono pediu plano master pra crescer a Roberts (vendas, números, financeiro, sob
 
 ## 2026-05-28 — ONBOARDING THIAGO DOCARMO CONCLUIDO
 CEO IA nomeado James (ceo.md → james.md, refs Carlos → James em todo o repo). Empresa: Roberts Landscape Design and Construction (Cape Cod/South Shore, MA). Stack real Jobber + Square corrigida (era GHL + QuickBooks). Mercado US+BR, Cloud Code $200, modelo autônomo, TZ America/New_York. Relatório completo: [[sessoes/sessao-2026-05-28]].
+
+## 2026-06-14 — Site multi-página Polaris (Victor)
+ENTREGA: site institucional completo em `wiki/clients/roberts-landscape/entregas/site/` — 9 páginas HTML (home + masonry/patios-walkways/retaining-walls/outdoor-living/landscape + gallery/about/contact), schema LocalBusiness+Service, SEO por página (keyword-alvo Cape Cod/South Shore), telefone clicável, formulário, responsivo. Subpastas espelham polarishardscape.com. Pendente: fotos reais, endpoint do form (Formspree/Jobber), reviews reais do GBP, deploy.
