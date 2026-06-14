@@ -17,7 +17,9 @@
 ## Números-Chave
 - 🚨 **EMERGÊNCIA 2026-06-14:** meta $200.000 em 30 dias | **$300.000 em quotes abertos** (~30 estimates) | budget ads $3.000.
 - **MATH REAL:** $200k de $300k cotado = **67% conversão (apertado).** Priorizar masonry $20k+ (maior valor/margem) + trabalhar TODO quote + refil com ads.
-- **Linha premium = MASONRY/HARDSCAPE ($20k+).** Landscape = volume. Estratégia puxa masonry como carro-chefe.
+- **Capacidade:** $40-50k/sem → $520-650k até 15/set. Pipeline $300k → folga $220-350k. Capacidade NÃO é gargalo. Ads liberados.
+- **CAIXA AGORA = depósito 50% na assinatura** (masonry $20k → $10k cash no dia). Fechar 7 = $70k+ em dias.
+- **Linha premium = MASONRY/HARDSCAPE ($20k+).** Encher semanas com masonry, seletivo no landscape (recusar baixa margem).
 - **Nome de marca líder:** "North Star Masonry and Hardscape" (Roberts = entidade legal até validar).
 - Volume leads Roberts: 10 a 30/mês
 - Meta receita escalável: $10.000/mês mínimo

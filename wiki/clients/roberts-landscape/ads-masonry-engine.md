@@ -65,6 +65,9 @@ jobs, salary, hiring, diy, cheap, free, repair, supplies, wholesale, course, "ne
 | Close rate | medir → otimizar |
 | $ fechado de ads | vs $3k investido |
 
-## CAPACIDADE (preencher com Thiago — governa quão forte escalar)
-- Quanto de obra NOVA o crew entrega neste verão sem contratar? $______ / ______ jobs
-- Pode empurrar entrega pra fall ("booking 2026") sem perder cliente? Sim/Não
+## CAPACIDADE — CONFIRMADA 2026-06-14
+- Throughput: **$40-50k/semana**. Até 15/set (~13 sem) = **$520-650k entregável**.
+- ~30 masonry $20k + ~30 landscape (tree removal, plantings, etc) cabem na janela.
+- Pipeline atual $300k → **folga de ~$220-350k pra vender E entregar.**
+- **VEREDITO: ads liberados no talo.** Capacidade não é gargalo. Encher semanas com masonry (alta margem), ser seletivo no landscape.
+- Excedente além de 15/set → fila premium "booking 2026" (sinal premium, não recusa).

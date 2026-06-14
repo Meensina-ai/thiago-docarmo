@@ -72,6 +72,16 @@ Abra os ~30 estimates ($300k total) no Jobber. Marque cada um com **tipo (🧱 m
 - **Facilitar o sim:** "reply yes and I'll send the agreement" → tira fricção.
 - **NÃO baixe preço.** Se travar no valor, agregue (ex: leve extra de planting, prioridade de agenda) — preserva margem e posicionamento premium.
 
+## PASSO 4.5 — FECHAR COM DEPÓSITO = CAIXA NO DIA 💰
+
+O aperto de caixa se resolve no FECHAMENTO, não na entrega. Sempre peça **50% de depósito na assinatura**.
+Masonry $20k → $10k de caixa no dia que assina, antes de pôr pedra. É padrão premium e filtra calote.
+
+### Script de fechamento (EN)
+> "Great — to lock in your build slot, we take a 50% deposit to get you on the schedule and order materials, with the balance due on completion. I can send the agreement and deposit link today and we'll be breaking ground in [timeframe]. Want me to send it over?"
+
+> Meta de caixa: 7 masonry fechados × $10k depósito = **$70k+ em dias.**
+
 ## PASSO 5 — PLACAR (atualizar todo dia)
 
 | Tier | Qtd | Contatados | Responderam | Reunião/Call | FECHADO ($) |
