@@ -2,6 +2,9 @@
 
 > Toda decisão não-óbvia aprovada pelo dono fica aqui. Não revisitar a cada sessão.
 
+## 2026-06-14 — DOMÍNIO + ARQUITETURA DE SITE TRAVADOS
+**Domínio principal: polarishardscape.com** (confirmado livre). Descartada a ideia de comprar vários domínios e rodar como subdomínios/microsites — fragmenta autoridade SEO, multiplica manutenção, cheira a PBN, confunde marca. **Decisão: UM domínio forte + landing pages por serviço como SUBPASTAS** (/masonry, /patios-walkways, /retaining-walls, /outdoor-living, /landscape). Subpasta > subdomínio em SEO (herda autoridade do domínio). Comprar no máx. 1-2 domínios extras só como 301 redirect defensivo, nunca como sites separados. Arquitetura documentada em `entregas/site-arquitetura.md`. Próximo: Victor constrói o multi-page OU entregar blueprint a dev externo.
+
 ## 2026-06-14 — NOME TRAVADO: Polaris Masonry & Hardscape (domínio polarishardscape.com)
 Após "North Star" cair, dono escolheu **Polaris** (direção estrela-guia mantida). Domínio exato `polarishardscape.com` confirmado disponível pelo dono. Polaris também = Estrela do Norte → logo da estrela + cores + narrativa preservados. Todos os assets re-skinados de North Star → Polaris (logo-polaris.svg, site-polaris-completo.html, landing-polaris.html, brand-validation-polaris.md, briefing/kit PDFs, proposta, prompts, gbp, brief-agência). Roberts Landscape segue como entidade legal. ⚠️ Pendente: checar USPTO TESS por "Polaris" em construção/landscape antes de abrir LLC (marca de veículos Polaris é outra classe).
 
