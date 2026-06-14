@@ -15,6 +15,8 @@
 5. Apresentação interativa GTM do SaaS/VPS (sessão 2)
 
 ## Números-Chave
+- 🚨 **EMERGÊNCIA 2026-06-14:** meta $200.000 em 30 dias | ticket médio **$30.000** | **30 estimates abertos** no Jobber ($900k pipeline parado) | budget ads $3.000.
+- **MATH:** precisa fechar só ~7 de 30 estimates = 23% conversão. É problema de FECHAMENTO, não de lead. Ads = seguro, não fonte.
 - Volume leads Roberts: 10 a 30/mês
 - Meta receita escalável: $10.000/mês mínimo
 - Receita atual landscape/construção: [preencher]

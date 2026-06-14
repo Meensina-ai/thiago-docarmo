@@ -45,15 +45,20 @@ Não adianta lead se a proposta não fecha.
 - Landing premium de 1 página pra receber o tráfego dos ads (prova + CTA agendar)
 - Template de proposta que vende VALOR (não preço) → fecha mais rápido e sobe ticket
 
-## NAPKIN FINANCEIRO (o mínimo que o `marcos` precisa — 4 números, 5 minutos)
+## NAPKIN FINANCEIRO — PREENCHIDO 2026-06-14
 
-Não precisa do levantamento completo agora. Só isso pra mirar:
-1. **Quanto $ preciso fechar nos próximos 30 dias pra respirar?** $______
-2. **Ticket médio de um projeto seu hoje:** $______
-3. **Quantos projetos abertos/estimates não fechados tem no Jobber agora?** ______
-4. **Quanto posso gastar em ads sem comprometer o caixa do mês?** $______
+1. **Meta de fechamento 30 dias:** $200.000
+2. **Ticket médio:** $30.000
+3. **Estimates abertos no Jobber:** ~30 ($900k de pipeline parado)
+4. **Budget ads:** $3.000
 
-→ Com isso o `marcos` te diz: quantas vendas faltam, qual custo por lead aceitável, e quando parar/escalar ads.
+### VEREDITO DO CFO (marcos)
+- $200k ÷ $30k = **fechar só ~7 projetos.**
+- 30 estimates abertos → precisa converter **7/30 = 23%.** Taxa normal de estimate trabalhado: 25-40%.
+- **É problema de FECHAMENTO, não de lead.** Os $200k já estão no Jobber.
+- Ads ($3k) = **seguro/reposição**, NÃO a fonte. A fonte são os 30 estimates.
+- Custo por lead aceitável: até ~$800-1000 (margem de 1 projeto de $30k cobre fácil).
+- **Foco #1 absoluto: trabalhar os 30 estimates (ver `follow-up-pipeline-quente.md`).**
 
 ## CRONOGRAMA 30 DIAS
 
