@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" font-family="Georgia, 'Times New Roman', serif">
+  <!-- North Star Masonry & Hardscape — horizontal lockup (light background) -->
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9a06a"/>
+      <stop offset="1" stop-color="#a87f49"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 4-point north star (sparkle) -->
+  <g transform="translate(108,110)">
+    <circle r="92" fill="none" stroke="#b08d57" stroke-width="2"/>
+    <polygon points="0,-78 14,-14 78,0 14,14 0,78 -14,14 -78,0 -14,-14"
+             fill="url(#gold)"/>
+    <polygon points="0,-44 8,-8 44,0 8,8 0,44 -8,8 -44,0 -8,-8"
+             fill="#1a1916"/>
+    <circle r="6" fill="#c9a06a"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="232" y="98" font-size="58" letter-spacing="6" fill="#1a1916">NORTH STAR</text>
+  <line x1="234" y1="120" x2="612" y2="120" stroke="#b08d57" stroke-width="2"/>
+  <text x="233" y="158" font-size="23" letter-spacing="11.5" fill="#6b6557"
+        font-family="Helvetica, Arial, sans-serif">MASONRY &amp; HARDSCAPE</text>
+</svg>
