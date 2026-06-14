@@ -2,6 +2,9 @@
 
 > Toda decisão não-óbvia aprovada pelo dono fica aqui. Não revisitar a cada sessão.
 
+## 2026-06-14 — "North Star" CAIU (já registrado) — naming em andamento (direção A: estrela-guia)
+Thiago descobriu que "North Star" já existe. Mantida a DIREÇÃO conceitual (estrela-guia / navegação), pra reaproveitar logo da estrela + cores + narrativa já criados. Shortlist em validação: Polaris, Lodestar, Meridian, Orion, True North, Compass Rose, Beacon Stone, Lightkeeper, Mariner's Star, Northpoint. Top CEO: Polaris / Lodestar / Meridian. Assets já produzidos (logo-north-star.svg, site, landing, briefing PDF, kit de marca PDF, prompts) viram TEMPLATES — re-skinar com o nome vencedor (trocar só a palavra). Validar domínio + trademark (USPTO/MA) antes de travar.
+
 ## 2026-06-14 — Nome de marca líder: "North Star Masonry and Hardscape"
 Thiago adotou (refinou de "...Landscape and Hardscape" → "...Masonry and Hardscape" no mesmo dia). Tirar "Landscape" do nome é COMMITMENT premium: a marca lidera 100% com masonry/hardscape ($20k+, alta margem, arte). Landscape continua sendo serviço oferecido (receita complementar) mas NÃO está no nome — não dilui o posicionamento. "Roberts Landscape Design and Construction" segue como entidade legal até validação. Pendente `brand-chief`: disponibilidade (domínio/LLC/trademark MA), prism Kapferer, arquétipo, identidade visual, narrativa "North Star" (estrela-guia / craftsmanship em pedra). Cobertura de busca "landscape" garantida via categorias secundárias do GBP + lista de serviços.
 
