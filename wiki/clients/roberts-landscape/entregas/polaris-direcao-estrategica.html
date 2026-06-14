@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Polaris — Direção Estratégica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stone:#1a1916; --cream:#f4f1ea; --gold:#b08d57; --gold-soft:#c8a876;
+    --ink:#2a2722; --muted:#6b655c; --line:#e0d9cc; --moss:#3a4540;
+    --serif:"Fraunces",Georgia,serif; --sans:"Geist",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:13px;line-height:1.6}
+  .page{width:210mm;min-height:297mm;padding:24mm 22mm;position:relative;page-break-after:always;background:var(--cream);overflow:hidden}
+  .page:last-child{page-break-after:auto}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-0.02em;line-height:1.05;color:var(--stone)}
+  .eyebrow{font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  p{margin-bottom:11px}
+  strong{color:var(--stone);font-weight:600}
+  .lead{font-size:15px;line-height:1.65;color:var(--moss)}
+
+  /* COVER */
+  .cover{background:var(--stone);color:var(--cream);display:flex;flex-direction:column;justify-content:space-between;padding:30mm 24mm}
+  .cover .star{width:46px;height:46px;margin-bottom:40px}
+  .cover h1{color:#fff;font-size:62px;line-height:0.98;margin-bottom:18px}
+  .cover .sub{font-size:17px;color:var(--gold-soft);font-family:var(--serif);font-style:italic;margin-bottom:6px}
+  .cover .tag{font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(244,241,234,.55)}
+  .cover .meta{font-size:11px;letter-spacing:0.05em;color:rgba(244,241,234,.6);line-height:1.9}
+  .cover .rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:26px 0}
+  .cover .stat{display:flex;gap:30px;margin-top:8px}
+  .cover .stat div span{display:block;font-family:var(--serif);font-size:26px;color:#fff}
+  .cover .stat div small{font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(244,241,234,.5)}
+
+  .h-mark{display:flex;align-items:center;gap:10px;margin-bottom:30px}
+  .h-mark .s{width:22px;height:22px}
+  .h-mark .t{font-family:var(--serif);font-size:13px;color:var(--stone);letter-spacing:0.02em}
+  .h-mark .pg{margin-left:auto;font-size:10px;letter-spacing:0.2em;color:var(--muted)}
+
+  h2.title{font-size:34px;margin-bottom:8px}
+  .divider{height:2px;width:54px;background:var(--gold);margin:16px 0 22px}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:12px}
+  .card h3{font-size:17px;margin-bottom:6px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .pill{display:inline-block;background:var(--stone);color:var(--cream);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin:0 5px 6px 0}
+  .pill.gold{background:var(--gold)}
+  .pill.out{background:#fff;color:var(--muted);border:1px solid var(--line)}
+  ul.clean{list-style:none;margin:6px 0 4px}
+  ul.clean li{position:relative;padding-left:18px;margin-bottom:7px}
+  ul.clean li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;background:var(--gold);border-radius:50%}
+  .num{font-family:var(--serif);font-size:13px;color:var(--gold);font-weight:600}
+
+  table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:12px}
+  th{text-align:left;font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);font-weight:600;padding:8px 10px;border-bottom:2px solid var(--line)}
+  td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  td.k{font-weight:600;color:var(--stone);white-space:nowrap}
+
+  .phase{border-left:3px solid var(--gold);padding:4px 0 4px 16px;margin-bottom:16px}
+  .phase .ph{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .phase h3{font-size:16px;margin:3px 0 4px}
+
+  .quote{font-family:var(--serif);font-size:21px;line-height:1.35;color:var(--stone);font-style:italic;margin:6px 0 4px}
+  .footnote{position:absolute;bottom:14mm;left:22mm;right:22mm;font-size:9px;color:var(--muted);letter-spacing:0.04em;border-top:1px solid var(--line);padding-top:8px;display:flex;justify-content:space-between}
+
+  .callout{background:var(--moss);color:var(--cream);border-radius:10px;padding:20px 22px;margin:6px 0 14px}
+  .callout .eyebrow{color:var(--gold-soft)}
+  .callout p{color:rgba(244,241,234,.92)}
+  .callout .quote{color:#fff}
+  .risk td.k{color:var(--stone)}
+  .twocol{column-count:2;column-gap:22px}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+  <div>
+    <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg>
+    <div class="tag">Strategic Direction Brief · Confidencial</div>
+    <div class="rule"></div>
+    <h1>O caminho<br>certo pra<br>Polaris.</h1>
+    <p class="sub">Masonry &amp; Hardscape · Cape Cod &amp; South Shore</p>
+  </div>
+  <div>
+    <div class="rule"></div>
+    <div class="stat">
+      <div><span>$20k+</span><small>Projeto-alvo</small></div>
+      <div><span>1</span><small>Nicho, não dez</small></div>
+      <div><span>$10k/mo</span><small>Meta escalável</small></div>
+    </div>
+    <div class="rule"></div>
+    <p class="meta">Preparado por James — CEO IA · para Thiago doCarmo<br>14 de junho de 2026 · Roberts Landscape (entidade legal) → Polaris (marca)</p>
+  </div>
+</section>
+
+<!-- PAGE 1: A TESE -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">01 · A Tese</span></div>
+
+  <div class="eyebrow">Por que essa empresa existe</div>
+  <h2 class="title">A aposta: especialista, não faz-tudo.</h2>
+  <div class="divider"></div>
+
+  <p class="lead">A Roberts hoje faz de tudo — landscape, hardscape, árvore, pintura, reforma de cozinha e banheiro. Isso parece segurança, mas é a própria armadilha: quem faz tudo compete por preço, vira commodity, e prende o dono gerenciando muitas frentes e equipes ao mesmo tempo.</p>
+
+  <p><strong>Polaris faz a aposta contrária:</strong> estreitar para <strong>masonry &amp; hardscape premium</strong>. Pedra, pátios, muros de arrimo, outdoor living. Menos frentes, margem maior, e uma marca que pode ser <em>referida</em> e <em>premium</em> — não a mais barata da cotação.</p>
+
+  <div class="callout">
+    <div class="eyebrow">O fio condutor de tudo</div>
+    <p class="quote">Cada decisão da Polaris precisa responder uma pergunta: isso me tira da operação ou me afunda nela?</p>
+    <p>Seu objetivo de fundo não é "vender mais reforma". É construir um negócio que roda sem você no campo todo dia, com receita escalável de pelo menos $10.000/mês e menos gente pra gerenciar. Especializar é o que torna isso possível: um ofício, um processo, uma equipe enxuta de alta margem.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>O que a Roberts faz hoje</h3>
+      <ul class="clean">
+        <li>10+ serviços, vários ofícios diferentes</li>
+        <li>Compete em cotações por preço</li>
+        <li>Dono gerencia muitas equipes e frentes</li>
+        <li>Marca genérica, difícil de referir</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>O que a Polaris vira</h3>
+      <ul class="clean">
+        <li>Um nicho: masonry &amp; hardscape premium</li>
+        <li>Vende valor e permanência, não preço</li>
+        <li>Uma equipe especialista, processo único</li>
+        <li>Marca memorável, motor de indicação</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+<!-- PAGE 2: POSICIONAMENTO + ICP -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">02 · Posição &amp; Cliente</span></div>
+
+  <div class="eyebrow">Posicionamento</div>
+  <h2 class="title">Não a cotação mais barata. Feito pra durar gerações.</h2>
+  <div class="divider"></div>
+
+  <p>O dono premium de Cape Cod não quer o orçamento mais baixo — quer parar de refazer. A Polaris se posiciona como o estúdio de pedra de confiança: <strong>obra que parece que sempre esteve ali</strong>, prazo cumprido, fatura sem surpresa, um responsável do briefing à entrega.</p>
+
+  <p class="quote" style="font-size:19px;margin:14px 0">"Built to last generations."</p>
+
+  <div class="eyebrow" style="margin-top:18px">Cliente ideal (ICP)</div>
+  <p>Estreitar o cliente é tão importante quanto estreitar o serviço. A Polaris persegue:</p>
+  <ul class="clean">
+    <li><strong>Donos residenciais premium</strong> em Cape Cod &amp; South Shore — casa principal ou segunda casa.</li>
+    <li>Projetos de <strong>$20k+</strong>: pátios de pedra, muros de arrimo, outdoor kitchens, fire features.</li>
+    <li>Quem valoriza <strong>permanência e acabamento</strong>, não o menor preço.</li>
+  </ul>
+
+  <div class="eyebrow" style="margin-top:14px">Pra quem dizer NÃO</div>
+  <p style="margin-bottom:8px">Dizer não é o que protege a margem e o seu tempo:</p>
+  <div>
+    <span class="pill out">Reparo de $500</span>
+    <span class="pill out">"Só um orçamentinho"</span>
+    <span class="pill out">Caça-preço</span>
+    <span class="pill out">Fora da área</span>
+    <span class="pill out">Pintura / reforma interna</span>
+  </div>
+
+  <div class="callout" style="margin-top:16px">
+    <div class="eyebrow">Por que isso te tira da operação</div>
+    <p>Menos tipos de job = um processo repetível = você consegue treinar um líder de equipe pra executar sem você. Faz-tudo não delega; especialista sim.</p>
+  </div>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+<!-- PAGE 3: OFERTA + PRICING -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">03 · Oferta &amp; Preço</span></div>
+
+  <div class="eyebrow">A escada de serviços</div>
+  <h2 class="title">Cinco linhas. Lidere pela de maior margem.</h2>
+  <div class="divider"></div>
+
+  <table>
+    <tr><th>Linha de serviço</th><th>Papel estratégico</th><th>Prioridade</th></tr>
+    <tr><td class="k">Masonry</td><td>Herói da marca. Pedra natural, maior margem e diferenciação.</td><td><span class="pill gold">Liderar</span></td></tr>
+    <tr><td class="k">Outdoor Living</td><td>Outdoor kitchens, fire pits, lighting. Alto ticket aspiracional.</td><td><span class="pill gold">Liderar</span></td></tr>
+    <tr><td class="k">Retaining Walls</td><td>Job técnico, ticket médio-alto, recorrente em terreno costeiro.</td><td><span class="pill">Núcleo</span></td></tr>
+    <tr><td class="k">Patios &amp; Walkways</td><td>Porta de entrada de hardscape, volume saudável.</td><td><span class="pill">Núcleo</span></td></tr>
+    <tr><td class="k">Landscape</td><td>Complementar. Captura busca ampla, fecha o projeto.</td><td><span class="pill out">Apoio</span></td></tr>
+  </table>
+
+  <div class="eyebrow" style="margin-top:8px">Estratégia de preço</div>
+  <div class="grid2">
+    <div class="card">
+      <h3>Piso de projeto</h3>
+      <p style="margin:0">Estabeleça um <strong>mínimo de ~$15–20k</strong>. Abaixo disso, a Polaris não compete — protege margem, agenda e posicionamento premium.</p>
+    </div>
+    <div class="card">
+      <h3>Valor, não planilha</h3>
+      <p style="margin:0">Venda o resultado (permanência, beleza, zero retrabalho), não o custo. Orçamento em <strong>boas/melhores/ótimas</strong> opções, com material e cronograma claros.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="eyebrow">A prova que você já tem</div>
+    <p>4.9★ · 397 reviews · 500+ builds · licenciado &amp; segurado em MA · desde 2009. Essa reputação justifica preço premium — desde que o rating seja real e confirmado no Google Business antes de publicar.</p>
+  </div>
+
+  <p style="font-size:11.5px;color:var(--muted)"><strong>Ação:</strong> o portfólio antes/depois é o ativo de venda nº 1. Toda obra entregue vira foto profissional — é o que fecha o job premium sem você precisar argumentar.</p>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+<!-- PAGE 4: AQUISIÇÃO -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">04 · Como o lead entra</span></div>
+
+  <div class="eyebrow">Motor de aquisição</div>
+  <h2 class="title">Lead que entra sozinho &gt; lead que você caça.</h2>
+  <div class="divider"></div>
+
+  <p class="lead">A meta não é "mais leads". É leads <strong>inbound, qualificados e premium</strong> que chegam pela marca — porque é o único modelo que não depende de você correndo atrás.</p>
+
+  <table>
+    <tr><th>Canal</th><th>O que faz</th><th>Esforço</th></tr>
+    <tr><td class="k">Google Business Profile</td><td>Domina o Local Pack do Maps. Onde o dono premium de Cape Cod procura primeiro. Reviews + fotos + posts.</td><td><span class="pill gold">Prioridade 1</span></td></tr>
+    <tr><td class="k">Site + Local SEO</td><td>As subpáginas por serviço (masonry, patios, retaining walls...) capturam "masonry contractor cape cod". Já construído.</td><td><span class="pill gold">Prioridade 1</span></td></tr>
+    <tr><td class="k">Motor de reviews</td><td>Pedido sistemático de review pós-entrega. Cada 5★ alimenta GBP e fecha o próximo.</td><td><span class="pill">Contínuo</span></td></tr>
+    <tr><td class="k">Google Ads (intenção)</td><td>Captura quem já busca o serviço agora. Ligar depois que GBP + site estiverem firmes.</td><td><span class="pill">Fase 2</span></td></tr>
+    <tr><td class="k">Indicação / portfólio</td><td>Obra premium gera indicação premium. O before/after circula sozinho.</td><td><span class="pill">Composto</span></td></tr>
+  </table>
+
+  <div class="callout">
+    <div class="eyebrow">O ponto cego a corrigir</div>
+    <p>Hoje a comunicação com lead é telefone + SMS manual, sem automação. Pra escalar sem te prender, o caminho é capturar o lead no site (formulário ligado ao <strong>Jobber</strong>) e ter follow-up estruturado — o lead não pode depender de você atender o telefone.</p>
+  </div>
+
+  <p style="font-size:11.5px;color:var(--muted)"><strong>Stack atual:</strong> Jobber (CRM/agenda/fatura) + Square (pagamento). Ambos servem bem — basta plugar o site neles e padronizar o processo de orçamento.</p>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+<!-- PAGE 5: SAIR DA OPERACAO -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">05 · Sua saída da operação</span></div>
+
+  <div class="eyebrow">O objetivo de verdade</div>
+  <h2 class="title">A marca vende. Você sai do campo.</h2>
+  <div class="divider"></div>
+
+  <p class="lead">Tudo acima existe pra te levar de <strong>operador</strong> a <strong>dono</strong>. A sequência importa — não dá pra delegar o caos; dá pra delegar um sistema.</p>
+
+  <div class="phase">
+    <div class="ph">Etapa 1 · Marca puxa o lead</div>
+    <h3>O negócio para de depender da sua corrida</h3>
+    <p style="margin:0">GBP + site + reviews fazem o lead premium chegar inbound. Você deixa de ser o motor de vendas.</p>
+  </div>
+  <div class="phase">
+    <div class="ph">Etapa 2 · Processo repetível</div>
+    <h3>Um ofício, um jeito de orçar e executar</h3>
+    <p style="margin:0">Nicho estreito = orçamento e obra padronizados no Jobber. O que é repetível pode ser ensinado.</p>
+  </div>
+  <div class="phase">
+    <div class="ph">Etapa 3 · Líder de equipe</div>
+    <h3>Um foreman roda a obra no seu lugar</h3>
+    <p style="margin:0">Você sobe pra dono/qualidade/venda. Treina um responsável de campo — possível porque é só masonry, não cinco ofícios.</p>
+  </div>
+  <div class="phase">
+    <div class="ph">Etapa 4 · Dono, não operário</div>
+    <h3>Receita escalável, presença opcional</h3>
+    <p style="margin:0">Margem premium + sistema + equipe = os $10k+/mês que rodam com você supervisionando, não executando.</p>
+  </div>
+
+  <div class="callout">
+    <div class="eyebrow">Conexão com o restaurante (Track Z)</div>
+    <p>O exit do restaurante libera tempo, energia e capital pra investir exatamente nessa máquina. Uma frente de saída financia a outra de construção. Foco em poucas frentes é o que reduz o risco emocional da semana 1.</p>
+  </div>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+<!-- PAGE 6: ROADMAP + RISCOS -->
+<section class="page">
+  <div class="h-mark"><svg class="s" viewBox="0 0 24 24"><path d="M12 1.5l2.3 7.2 7.2.05-5.8 4.3 2.2 7.2-5.9-4.4-5.9 4.4 2.2-7.2-5.8-4.3 7.2-.05z" fill="#b08d57"/></svg><span class="t">Polaris Masonry &amp; Hardscape</span><span class="pg">06 · Roadmap &amp; Riscos</span></div>
+
+  <div class="eyebrow">Roadmap 90 dias</div>
+  <h2 class="title">Foco, não dispersão.</h2>
+  <div class="divider"></div>
+
+  <table>
+    <tr><th>Janela</th><th>Foco</th><th>Entrega</th></tr>
+    <tr><td class="k">Dias 1–30</td><td>Fundação</td><td>Site Polaris no ar (Vercel + domínio), GBP otimizado, formulário ligado ao Jobber, fotos reais.</td></tr>
+    <tr><td class="k">Dias 31–60</td><td>Prova &amp; tração</td><td>Motor de reviews rodando, portfólio antes/depois, primeiros Google Ads de intenção.</td></tr>
+    <tr><td class="k">Dias 61–90</td><td>Sistema &amp; delegação</td><td>Processo de orçamento padronizado, começo do treino de líder de campo, métricas de funil.</td></tr>
+  </table>
+
+  <div class="eyebrow" style="margin-top:14px">Riscos &amp; o que validar antes</div>
+  <table class="risk">
+    <tr><th>Risco</th><th>Ação</th></tr>
+    <tr><td class="k">Nome "Polaris"</td><td>Checar USPTO (marca) + MA SOC antes de abrir a LLC. Garantir polarishardscape.com no registrar.</td></tr>
+    <tr><td class="k">Reviews / 4.9★</td><td>Confirmar autenticidade no Google Business antes de publicar. Rating inventado = risco legal e de credibilidade.</td></tr>
+    <tr><td class="k">Dependência de você</td><td>Sem processo + líder de campo, o negócio continua preso em você. É a etapa que não pode ser pulada.</td></tr>
+    <tr><td class="k">Dispersão de frentes</td><td>Roberts, restaurante, SaaS, VPS ao mesmo tempo drena foco. Polaris pede prioridade clara na semana 1.</td></tr>
+  </table>
+
+  <div class="callout" style="margin-top:8px">
+    <div class="eyebrow">Recomendação — a linha de baixo</div>
+    <p class="quote">Estreite pra masonry &amp; hardscape premium, deixe a marca puxar o lead, padronize o processo e treine um líder de campo. É assim que a Polaris vira receita escalável e te tira da operação — não fazendo mais, fazendo menos coisas, melhor.</p>
+  </div>
+
+  <div class="footnote"><span>Polaris — Direção Estratégica · James (CEO IA)</span><span>Confidencial · 14/06/2026</span></div>
+</section>
+
+</body>
+</html>
