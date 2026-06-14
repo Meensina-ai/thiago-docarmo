@@ -376,7 +376,9 @@ Quando o dono aprova algo não óbvio → salvar em `wiki/operations/decisions.m
 - **Localização:** Cape Cod / Hyannis, MA + South Shore, Massachusetts (EUA); parceria dev no Brasil
 - **Mercado:** US + BR (múltiplos)
 - **GitHub:** Thiagaoai
-- **Contato:** contact@roberts-landscape.com | +1 508 280 3770
+- **Contato:** contact@roberts-landscape.com | +1 508 464-4878 (linha pública do negócio; corrigido do antigo 508 280 3770 em 2026-06-14 — número real do site Roberts)
+- **Endereço:** 207 Iyannough Rd, Hyannis, MA 02601
+- **Prova social (do site atual):** 4.9★ · 397 reviews · 500+ builds · Licensed & Insured MA · fundada 2009 — ⚠️ confirmar autenticidade do rating/reviews antes de publicar no Polaris
 - **Tax ID:** pendente (EIN a preencher)
 - **Produtos/Serviços:** serviços de construção e landscape (Roberts) | SaaS Invoice multilíngue (futuro) | hospedagem VPS própria (futuro)
 - **Público-alvo:** [PREENCHER — clientes residenciais premium Cape Cod/South Shore]
@@ -416,8 +418,10 @@ Quando o dono aprova algo não óbvio → salvar em `wiki/operations/decisions.m
 - **Comunicação com lead/cliente:** telefone + SMS direto (sem automação ainda)
 - **Volume de leads Roberts:** 10 a 30/mês
 - **GitHub:** Thiagaoai
-- **Email:** contact@roberts-landscape.com | **Telefone:** +1 508 280 3770
+- **Email:** contact@roberts-landscape.com | **Telefone:** +1 508 464-4878
 - **Stack dev/AI do dono:** Cursor, Claude Code, Codex, Paperclip (Hostinger Docker), Ollama, DeepSeek, Qwen, Hermes, N8N, Composio, Matomo
+- **Site atual (Roberts):** robertslandscapecod.com (Next.js, hospedado Vercel, domínio IONOS) | repo GitHub: Thiagaoai/roberts-ldc-new
+- **Tipografia da marca (do site atual, reusada no Polaris):** Fraunces (serif/títulos) + Geist (sans/corpo)
 - **Site principal:** [PREENCHER]
 - **Ads:** [PREENCHER — Meta? Google? LinkedIn?]
 - **Redes sociais ativas:** [PREENCHER — handles]
