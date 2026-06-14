@@ -15,8 +15,10 @@
 5. Apresentação interativa GTM do SaaS/VPS (sessão 2)
 
 ## Números-Chave
-- 🚨 **EMERGÊNCIA 2026-06-14:** meta $200.000 em 30 dias | ticket médio **$30.000** | **30 estimates abertos** no Jobber ($900k pipeline parado) | budget ads $3.000.
-- **MATH:** precisa fechar só ~7 de 30 estimates = 23% conversão. É problema de FECHAMENTO, não de lead. Ads = seguro, não fonte.
+- 🚨 **EMERGÊNCIA 2026-06-14:** meta $200.000 em 30 dias | **$300.000 em quotes abertos** (~30 estimates) | budget ads $3.000.
+- **MATH REAL:** $200k de $300k cotado = **67% conversão (apertado).** Priorizar masonry $20k+ (maior valor/margem) + trabalhar TODO quote + refil com ads.
+- **Linha premium = MASONRY/HARDSCAPE ($20k+).** Landscape = volume. Estratégia puxa masonry como carro-chefe.
+- **Nome de marca líder:** "North Star Landscape and Hardscape" (Roberts = entidade legal até validar).
 - Volume leads Roberts: 10 a 30/mês
 - Meta receita escalável: $10.000/mês mínimo
 - Receita atual landscape/construção: [preencher]

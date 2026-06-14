@@ -45,20 +45,23 @@ Não adianta lead se a proposta não fecha.
 - Landing premium de 1 página pra receber o tráfego dos ads (prova + CTA agendar)
 - Template de proposta que vende VALOR (não preço) → fecha mais rápido e sobe ticket
 
-## NAPKIN FINANCEIRO — PREENCHIDO 2026-06-14
+## NAPKIN FINANCEIRO — PREENCHIDO 2026-06-14 (revisado)
 
 1. **Meta de fechamento 30 dias:** $200.000
-2. **Ticket médio:** $30.000
-3. **Estimates abertos no Jobber:** ~30 ($900k de pipeline parado)
+2. **Pipeline em quotes abertos:** **$300.000** (~30 estimates)
+3. **Linha premium:** masonry/hardscape ($20k+ por job, alta margem)
 4. **Budget ads:** $3.000
 
 ### VEREDITO DO CFO (marcos)
-- $200k ÷ $30k = **fechar só ~7 projetos.**
-- 30 estimates abertos → precisa converter **7/30 = 23%.** Taxa normal de estimate trabalhado: 25-40%.
-- **É problema de FECHAMENTO, não de lead.** Os $200k já estão no Jobber.
-- Ads ($3k) = **seguro/reposição**, NÃO a fonte. A fonte são os 30 estimates.
-- Custo por lead aceitável: até ~$800-1000 (margem de 1 projeto de $30k cobre fácil).
-- **Foco #1 absoluto: trabalhar os 30 estimates (ver `follow-up-pipeline-quente.md`).**
+- $200k de $300k cotado = **converter 67% (apertado, não folgado).**
+- **Priorizar masonry $20k+:** fechar 5-7 masonry chega perto da meta sozinho.
+- Com 67% necessário NÃO há folga pros "nãos" normais → **trabalhar TODO quote + refil com ads obrigatório** (ads viram necessários, não só seguro).
+- Custo por lead aceitável: até ~$800-1000 (margem de 1 masonry $25k cobre fácil).
+- **Foco #1: masonry primeiro nos 30 estimates (ver `follow-up-pipeline-quente.md`, regra MASONRY PRIMEIRO).**
+
+## POSICIONAMENTO (decidido 2026-06-14)
+- **Nome líder:** North Star Landscape and Hardscape
+- **Carro-chefe premium:** masonry/hardscape. Landscape = complementar. Ads, site e conteúdo puxam masonry.
 
 ## CRONOGRAMA 30 DIAS
 

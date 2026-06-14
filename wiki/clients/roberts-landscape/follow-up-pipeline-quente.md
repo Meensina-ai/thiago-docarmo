@@ -12,9 +12,14 @@ tags:
 > Objetivo: converter 7+ de 30 estimates em 30 dias. Os $200k já estão aqui.
 > Scripts em INGLÊS (clientes nos EUA). Tom premium: confiante, prestativo, sem desespero.
 
+## REGRA-MÃE: MASONRY PRIMEIRO 🧱
+
+$300k em quotes, preciso fechar $200k = 67% (apertado). Os **masonry/hardscape ($20k+)** são o maior valor E a maior margem E a linha premium da marca. **Fechar 5-7 masonry já chega perto dos $200k.**
+→ Dentro de cada tier abaixo, **masonry sempre vem antes de landscape.** Ataca os $20k+ primeiro, todo dia.
+
 ## PASSO 1 — TRIAGEM (faça hoje, 30 min)
 
-Abra os 30 estimates no Jobber e classifique cada um em 3 tiers:
+Abra os ~30 estimates ($300k total) no Jobber. Marque cada um com **tipo (🧱 masonry / 🌿 landscape)** e **tier**:
 
 | Tier | Critério | Ação | Prioridade |
 |------|----------|------|-----------|
@@ -22,7 +27,8 @@ Abra os 30 estimates no Jobber e classifique cada um em 3 tiers:
 | 🌤️ **B — MORNO** | Enviado 3-8 semanas, sumiu depois do orçamento, sem "não" | Sequência 3 toques | Alta |
 | ❄️ **C — FRIO** | Enviado > 8 semanas, nunca respondeu, ou disse "ano que vem" | 1 toque de reativação | Baixa |
 
-> Regra: 80% da sua energia nos Tier A. Um "talvez" quente vale 10 frios.
+> Ordem de ataque: **🧱 Masonry Tier A → 🧱 Masonry Tier B → 🌿 Landscape Tier A → resto.**
+> Um masonry $25k quente vale mais que cinco landscape pequenos.
 
 ## PASSO 2 — CADÊNCIA POR TIER
 
