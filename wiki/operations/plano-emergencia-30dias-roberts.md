@@ -60,7 +60,7 @@ Não adianta lead se a proposta não fecha.
 - **Foco #1: masonry primeiro nos 30 estimates (ver `follow-up-pipeline-quente.md`, regra MASONRY PRIMEIRO).**
 
 ## POSICIONAMENTO (decidido 2026-06-14)
-- **Nome líder:** North Star Landscape and Hardscape
+- **Nome líder:** North Star Masonry and Hardscape (lidera 100% com masonry; landscape = serviço fora do nome)
 - **Carro-chefe premium:** masonry/hardscape. Landscape = complementar. Ads, site e conteúdo puxam masonry.
 
 ## CRONOGRAMA 30 DIAS

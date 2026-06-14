@@ -34,7 +34,7 @@ tags:
 
 ## ⭐ NOME LÍDER ESCOLHIDO (2026-06-14)
 
-**"North Star Landscape and Hardscape"** — Thiago adotou. "Hardscape" no nome de propósito (masonry $20k+ = linha premium/carro-chefe). Roberts = entidade legal até validação.
+**"North Star Masonry and Hardscape"** — Thiago adotou (refinou de "Landscape" → "Masonry" no mesmo dia). Tirar "Landscape" do nome = commitment premium total no masonry/hardscape ($20k+). Landscape segue como serviço, fora do nome. Roberts = entidade legal até validação.
 → `brand-chief` validar: disponibilidade (domínio/LLC/trademark MA), prism de Kapferer, arquétipo, identidade visual, narrativa "North Star" (estrela-guia / craftsmanship premium).
 
 ## 4. NOME E IDENTIDADE (reposicionamento profundo = tudo na mesa)
