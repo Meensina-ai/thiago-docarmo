@@ -7,10 +7,11 @@
 - Descoberta-chave: stack real da Roberts é **Jobber + Square** (não GoHighLevel + QuickBooks como assumido). Agentes de nicho precisam ser refeitos.
 
 ## Prioridades próximas
-1. 🔴 Refazer `construcao-landscape-pm` + MCP pra Jobber + Square
-2. Estruturar pipeline Roberts: lead → estimate → schedule → invoice → cobrança na stack real
-3. Avançar plano de saída do restaurante (agente `exit-restaurante`) — atualização semanal segunda 9h NY
-4. Apresentação interativa GTM do SaaS/VPS (sessão 2)
+1. 🔴 **PLANO MASTER ROBERTS PREMIUM** (lançado 2026-06-14) — reposicionamento profundo + crescer vendas/margem sem prender o Thiago na operação. Ver `wiki/operations/plano-master-roberts-premium.md`. GATING: Thiago preencher `wiki/clients/roberts-landscape/financeiro-levantamento.md` → aciona `marcos`. E responder `rebrand-brief.md` → aciona `brand-chief`. Budget ads travado: $1.5k-4k/mês.
+2. 🔴 Refazer `construcao-landscape-pm` + MCP pra Jobber + Square
+3. Estruturar pipeline Roberts: lead → estimate → schedule → invoice → cobrança na stack real
+4. Avançar plano de saída do restaurante (agente `exit-restaurante`) — atualização semanal segunda 9h NY
+5. Apresentação interativa GTM do SaaS/VPS (sessão 2)
 
 ## Números-Chave
 - Volume leads Roberts: 10 a 30/mês

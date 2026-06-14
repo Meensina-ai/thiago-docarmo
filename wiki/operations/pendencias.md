@@ -8,6 +8,9 @@
 
 ### 🔴 Críticas
 
+- [ ] **[PLANO MASTER FASE 1]** Thiago preencher `wiki/clients/roberts-landscape/financeiro-levantamento.md` (números reais) → destrava o CFO `marcos`. GATING de todo o plano. — surgiu 2026-06-14
+- [ ] **[PLANO MASTER FASE 1]** Thiago responder `wiki/clients/roberts-landscape/rebrand-brief.md` → aciona `brand-chief` (reposicionamento profundo + ICP premium + audience.md/brand-voice.md). — surgiu 2026-06-14
+- [ ] **[PLANO MASTER FASE 1]** Acionar `advisory-chief` pra mapa competitivo premium de Cape Cod (roda em paralelo, não depende do dono). — surgiu 2026-06-14
 - [ ] Refazer agente `construcao-landscape-pm` + MCP `construcao-landscape-mcp` pra stack REAL **Jobber + Square** (estavam desenhados pra GoHighLevel + QuickBooks + Google Calendar). — surgiu no onboarding 2026-05-28
 
 ### 🟡 Médias
