@@ -8,6 +8,9 @@
 
 ### 🔴 Críticas
 
+- [ ] **[EMERGÊNCIA 48H]** Thiago responder NAPKIN financeiro (4 números) em `plano-emergencia-30dias-roberts.md` → `marcos` define meta de venda e teto de ads. — 2026-06-14
+- [ ] **[EMERGÊNCIA 48H]** `crm-manager` + `rodrigo` puxar TODOS os leads/estimates abertos no Jobber → lista quente pra follow-up (caixa mais rápido). — 2026-06-14
+- [ ] **[EMERGÊNCIA SEM 1]** `google-ads-manager` campanha Search alta intenção no ar + `google-my-business` otimizar GBP + `victor` landing premium 1 página + `valeria` proposta premium. — 2026-06-14
 - [ ] **[PLANO MASTER FASE 1]** Thiago preencher `wiki/clients/roberts-landscape/financeiro-levantamento.md` (números reais) → destrava o CFO `marcos`. GATING de todo o plano. — surgiu 2026-06-14
 - [ ] **[PLANO MASTER FASE 1]** Thiago responder `wiki/clients/roberts-landscape/rebrand-brief.md` → aciona `brand-chief` (reposicionamento profundo + ICP premium + audience.md/brand-voice.md). — surgiu 2026-06-14
 - [ ] **[PLANO MASTER FASE 1]** Acionar `advisory-chief` pra mapa competitivo premium de Cape Cod (roda em paralelo, não depende do dono). — surgiu 2026-06-14

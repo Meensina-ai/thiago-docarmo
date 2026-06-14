@@ -7,7 +7,8 @@
 - Descoberta-chave: stack real da Roberts é **Jobber + Square** (não GoHighLevel + QuickBooks como assumido). Agentes de nicho precisam ser refeitos.
 
 ## Prioridades próximas
-1. 🔴 **PLANO MASTER ROBERTS PREMIUM** (lançado 2026-06-14) — reposicionamento profundo + crescer vendas/margem sem prender o Thiago na operação. Ver `wiki/operations/plano-master-roberts-premium.md`. GATING: Thiago preencher `wiki/clients/roberts-landscape/financeiro-levantamento.md` → aciona `marcos`. E responder `rebrand-brief.md` → aciona `brand-chief`. Budget ads travado: $1.5k-4k/mês.
+1. 🚨 **PLANO DE EMERGÊNCIA 30 DIAS — FECHAR CAIXA** (2026-06-14). Caixa apertado, fechar venda JÁ, pode investir em ads agora. Pico de temporada junho Cape Cod. 3 alavancas por velocidade: (1) pipeline quente no Jobber, (2) Google Ads alta intenção + GBP, (3) conversão (landing + proposta premium). North star = $ FECHADO. Ver `wiki/operations/plano-emergencia-30dias-roberts.md`. GATING próximas 48h: Thiago responder NAPKIN (4 números) + puxar leads abertos Jobber.
+2. 🔴 **PLANO MASTER ROBERTS PREMIUM** (90 dias, roda por baixo) — reposicionamento profundo. Ver `wiki/operations/plano-master-roberts-premium.md`. Liga completo na semana 4 quando caixa respirar. Budget ads: $1.5k-4k/mês.
 2. 🔴 Refazer `construcao-landscape-pm` + MCP pra Jobber + Square
 3. Estruturar pipeline Roberts: lead → estimate → schedule → invoice → cobrança na stack real
 4. Avançar plano de saída do restaurante (agente `exit-restaurante`) — atualização semanal segunda 9h NY
