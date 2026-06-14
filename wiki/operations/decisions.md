@@ -2,6 +2,9 @@
 
 > Toda decisão não-óbvia aprovada pelo dono fica aqui. Não revisitar a cada sessão.
 
+## 2026-06-14 — NOME TRAVADO: Polaris Masonry & Hardscape (domínio polarishardscape.com)
+Após "North Star" cair, dono escolheu **Polaris** (direção estrela-guia mantida). Domínio exato `polarishardscape.com` confirmado disponível pelo dono. Polaris também = Estrela do Norte → logo da estrela + cores + narrativa preservados. Todos os assets re-skinados de North Star → Polaris (logo-polaris.svg, site-polaris-completo.html, landing-polaris.html, brand-validation-polaris.md, briefing/kit PDFs, proposta, prompts, gbp, brief-agência). Roberts Landscape segue como entidade legal. ⚠️ Pendente: checar USPTO TESS por "Polaris" em construção/landscape antes de abrir LLC (marca de veículos Polaris é outra classe).
+
 ## 2026-06-14 — "North Star" CAIU (já registrado) — naming em andamento (direção A: estrela-guia)
 Thiago descobriu que "North Star" já existe. Mantida a DIREÇÃO conceitual (estrela-guia / navegação), pra reaproveitar logo da estrela + cores + narrativa já criados. Shortlist em validação: Polaris, Lodestar, Meridian, Orion, True North, Compass Rose, Beacon Stone, Lightkeeper, Mariner's Star, Northpoint. Top CEO: Polaris / Lodestar / Meridian. Assets já produzidos (logo-north-star.svg, site, landing, briefing PDF, kit de marca PDF, prompts) viram TEMPLATES — re-skinar com o nome vencedor (trocar só a palavra). Validar domínio + trademark (USPTO/MA) antes de travar.
 

@@ -20,7 +20,7 @@
 - **Capacidade:** $40-50k/sem → $520-650k até 15/set. Pipeline $300k → folga $220-350k. Capacidade NÃO é gargalo. Ads liberados.
 - **CAIXA AGORA = depósito 50% na assinatura** (masonry $20k → $10k cash no dia). Fechar 7 = $70k+ em dias.
 - **Linha premium = MASONRY/HARDSCAPE ($20k+).** Encher semanas com masonry, seletivo no landscape (recusar baixa margem).
-- **Nome de marca:** "North Star" CAIU (já registrado). Naming em andamento, direção estrela-guia (reaproveita logo/cores). Shortlist: Polaris, Lodestar, Meridian, Orion, True North, Compass Rose, Beacon Stone, Lightkeeper. Validar domínio+trademark. Assets viram templates pra re-skin.
+- **Nome TRAVADO: Polaris Masonry & Hardscape** (domínio polarishardscape.com disponível). North Star caiu (registrado). Polaris = estrela-guia → logo/cores/narrativa preservados. Todos os assets re-skinados. ⚠️ Checar USPTO antes da LLC. Roberts = entidade legal.
 - Volume leads Roberts: 10 a 30/mês
 - Meta receita escalável: $10.000/mês mínimo
 - Receita atual landscape/construção: [preencher]

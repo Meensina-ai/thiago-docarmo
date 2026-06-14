@@ -1,4 +1,4 @@
-# Proposal Template — North Star Masonry and Hardscape (valeria)
+# Proposal Template — Polaris Masonry and Hardscape (valeria)
 
 > Premium, value-first proposal. Closes higher tickets + locks 50% deposit = cash on signing.
 > Replace [brackets]. Keep tone confident and craftsman-premium. EN (US clients).
@@ -6,7 +6,7 @@
 
 ---
 
-## [NORTH STAR MASONRY AND HARDSCAPE] — logo
+## [POLARIS MASONRY AND HARDSCAPE] — logo
 
 **Prepared for:** [Client Name]
 **Project:** [e.g., Backyard Stone Patio & Retaining Wall — Osterville]
@@ -28,7 +28,7 @@
 - [Drainage / grading]
 - [Cleanup & final walkthrough]
 
-### 4. The North Star Difference
+### 4. The Polaris Difference
 - Hand-built craftsmanship — masonry that lasts generations
 - Licensed & insured, Cape Cod & South Shore
 - One point of contact (Thiago) from design to final stone
@@ -59,4 +59,4 @@ _________________________
 Client signature / date
 
 ---
-*North Star Masonry and Hardscape — built to last generations.*
+*Polaris Masonry and Hardscape — built to last generations.*

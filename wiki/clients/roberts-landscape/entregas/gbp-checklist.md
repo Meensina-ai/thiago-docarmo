@@ -1,7 +1,7 @@
 # Google Business Profile — Checklist Pronto pra Aplicar (google-my-business)
 
 > Grátis. Maior alavanca de lead orgânico local em dias. Aplicar esta semana.
-> ⚠️ Transição de nome: manter o perfil/reviews existentes da Roberts. Editar nome pra North Star só após checagem legal (não criar perfil novo = perde histórico de reviews).
+> ⚠️ Transição de nome: manter o perfil/reviews existentes da Roberts. Editar nome pra Polaris só após checagem legal (não criar perfil novo = perde histórico de reviews).
 
 ## Configuração (fazer agora)
 - [ ] **Categoria primária:** Masonry Contractor *(puxa a linha premium $20k+)*
