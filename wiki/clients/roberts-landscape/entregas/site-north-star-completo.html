@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>North Star Masonry &amp; Hardscape | Cape Cod &amp; South Shore Stone Craftsmen</title>
+<meta name="description" content="Premium masonry & hardscape serving Cape Cod and the South Shore, MA. Hand-built stone patios, retaining walls, walkways & outdoor living. Free design consultation. Now booking 2026.">
+<style>
+  :root{--ink:#1a1916;--stone:#2b2a27;--cream:#f4f1ea;--gold:#b08d57;--gold2:#c9a06a;--line:#d8d2c5;--muted:#6b6557}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.65}
+  h1,h2,h3,h4{font-weight:normal;letter-spacing:.4px}
+  a{color:inherit}
+  img{max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .center{text-align:center}
+  .eyebrow{font-family:Helvetica,Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:bold}
+  h2{font-size:clamp(26px,4vw,40px);margin:10px 0 14px}
+  .lead{font-family:Helvetica,Arial,sans-serif;color:var(--muted);max-width:680px;margin:0 auto 36px;font-size:17px}
+  .btn{display:inline-block;background:var(--gold);color:var(--ink);font-family:Helvetica,Arial,sans-serif;font-weight:bold;text-transform:uppercase;letter-spacing:1px;font-size:14px;padding:15px 32px;border-radius:2px;text-decoration:none;transition:.2s;cursor:pointer;border:none}
+  .btn:hover{background:var(--gold2)}
+  .btn-ghost{background:transparent;border:1px solid var(--cream);color:var(--cream)}
+  .btn-dark{background:var(--ink);color:var(--cream)}
+  section{padding:78px 0}
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(26,25,22,.97);color:var(--cream);font-family:Helvetica,Arial,sans-serif;backdrop-filter:blur(6px)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:Georgia,serif;font-size:19px;letter-spacing:1px;color:#fff;text-decoration:none}
+  .brand b{color:var(--gold)}
+  .nav ul{list-style:none;display:flex;gap:24px;align-items:center}
+  .nav a{color:#e7e3d9;text-decoration:none;font-size:14px;letter-spacing:.5px}
+  .nav a:hover{color:var(--gold)}
+  .nav .call{background:var(--gold);color:var(--ink);padding:9px 18px;border-radius:2px;font-weight:bold}
+  .burger{display:none;font-size:26px;background:none;border:none;color:#fff;cursor:pointer}
+  /* HERO */
+  .hero{background:linear-gradient(rgba(26,25,22,.74),rgba(26,25,22,.74)),url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1700&q=80') center/cover;color:var(--cream);text-align:center;padding:120px 0 100px}
+  .hero h1{font-size:clamp(34px,6vw,62px);line-height:1.08;margin:16px 0 18px}
+  .hero p{font-size:20px;max-width:700px;margin:0 auto 32px;opacity:.93}
+  .hero .badge{font-family:Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-top:26px;opacity:.85}
+  /* TRUST STRIP */
+  .trust{background:var(--ink);color:var(--cream);font-family:Helvetica,Arial,sans-serif;padding:22px 0}
+  .trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:14px;text-align:center;font-size:14px;letter-spacing:.5px}
+  .trust b{color:var(--gold);display:block;font-size:13px}
+  /* CARDS */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+  .card{background:#fff;border:1px solid var(--line);padding:32px}
+  .card .ico{font-size:30px}
+  .card h3{font-size:22px;color:var(--stone);margin:12px 0 8px}
+  .card p{font-family:Helvetica,Arial,sans-serif;font-size:15px;color:var(--muted)}
+  .card ul{font-family:Helvetica,Arial,sans-serif;font-size:14px;color:var(--muted);margin-top:10px;padding-left:18px}
+  /* DARK */
+  .dark{background:var(--ink);color:var(--cream)}
+  .dark h2{color:#fff}
+  .dark .card{background:#23221f;border-color:#3a3833}
+  .dark .card h3{color:var(--gold)}
+  .dark .card p{color:#cfc8b8}
+  /* PROCESS */
+  .steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px;font-family:Helvetica,Arial,sans-serif}
+  .step{border-top:2px solid var(--gold);padding-top:16px}
+  .step b{display:block;color:var(--gold);font-size:14px;letter-spacing:1px;margin-bottom:6px}
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .gallery div{aspect-ratio:4/3;background:#cfc8b8;display:flex;align-items:center;justify-content:center;color:#7a7363;font-family:Helvetica,Arial,sans-serif;font-size:13px;border:1px solid var(--line)}
+  /* SERVICE AREAS */
+  .areas{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .region{background:#fff;border:1px solid var(--line);padding:34px}
+  .region h3{font-size:26px;color:var(--stone);margin-bottom:6px}
+  .region .sub{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+  .region .towns{font-family:Helvetica,Arial,sans-serif;font-size:15px;color:var(--muted);columns:2;column-gap:20px}
+  .region .towns span{display:block;padding:3px 0}
+  /* TESTIMONIAL */
+  .quote{background:#fff;border:1px solid var(--line);padding:30px;font-style:italic;font-size:17px;color:var(--stone)}
+  .quote footer{font-style:normal;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--gold);margin-top:14px;letter-spacing:.5px}
+  .stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px}
+  /* FAQ */
+  details{background:#fff;border:1px solid var(--line);padding:18px 22px;margin-bottom:12px;font-family:Helvetica,Arial,sans-serif}
+  details summary{cursor:pointer;font-weight:bold;color:var(--stone);font-size:16px}
+  details p{color:var(--muted);font-size:15px;margin-top:10px}
+  /* CONTACT */
+  .contact{background:var(--stone);color:var(--cream)}
+  .contact h2{color:#fff}
+  .cform{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:680px;margin:30px auto 0;font-family:Helvetica,Arial,sans-serif}
+  .cform input,.cform select,.cform textarea{padding:13px;border:1px solid #4a473f;background:#23221f;color:var(--cream);font-size:15px;font-family:Helvetica,Arial,sans-serif;width:100%}
+  .cform .full{grid-column:1/3}
+  .cform input::placeholder,.cform textarea::placeholder{color:#8d887c}
+  /* FOOTER */
+  footer.site{background:var(--ink);color:#9a958a;font-family:Helvetica,Arial,sans-serif;font-size:14px;padding:40px 0}
+  footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+  footer.site b{color:var(--cream);display:block;margin-bottom:8px}
+  footer.site a{color:var(--gold);text-decoration:none}
+  footer.site .legal{border-top:1px solid #34322d;margin-top:26px;padding-top:18px;text-align:center;font-size:13px}
+  @media(max-width:820px){
+    .nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--ink);flex-direction:column;padding:18px 24px;gap:16px}
+    .nav ul.open{display:flex}
+    .burger{display:block}
+    .areas{grid-template-columns:1fr}
+    .cform{grid-template-columns:1fr}.cform .full{grid-column:1}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">NORTH <b>★</b> STAR <span style="font-size:12px;letter-spacing:2px;color:#9a958a">MASONRY &amp; HARDSCAPE</span></a>
+    <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#areas">Service Areas</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="tel:+15082803770" class="call">📞 508 280 3770</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding-top:110px">
+  <div class="wrap">
+    <div class="eyebrow">Cape Cod &amp; South Shore Stone Craftsmen</div>
+    <h1>Hand-Built Masonry &amp; Hardscape<br>That Lasts Generations</h1>
+    <p>Custom stone patios, retaining walls, walkways &amp; outdoor living — designed and built by hand across Cape Cod and the South Shore, Massachusetts.</p>
+    <a href="#contact" class="btn">Book Your Free Design Consult</a>
+    <a href="tel:+15082803770" class="btn btn-ghost" style="margin-left:10px">Call 508 280 3770</a>
+    <div class="badge">★ Licensed &amp; Insured · Serving Cape Cod &amp; South Shore · Now Booking 2026</div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust"><div class="wrap">
+  <div><b>BUILT TO LAST</b>Masonry for generations</div>
+  <div><b>LICENSED &amp; INSURED</b>Full coverage, MA</div>
+  <div><b>TWO REGIONS</b>Cape Cod &amp; South Shore</div>
+  <div><b>ONE CONTACT</b>Design to final stone</div>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap center">
+    <div class="eyebrow">What We Build</div>
+    <h2>Premium Hardscape, Crafted in Stone</h2>
+    <p class="lead">We lead with masonry — the stonework that defines a property and holds for decades. We also handle full landscape work to complete your project.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🧱</div><h3>Stone &amp; Paver Patios</h3><p>Outdoor living spaces built to entertain.</p><ul><li>Natural stone &amp; paver patios</li><li>Proper base &amp; drainage</li><li>Built to handle NE winters</li></ul></div>
+      <div class="card"><div class="ico">🪨</div><h3>Retaining &amp; Fieldstone Walls</h3><p>Structural beauty that holds the land.</p><ul><li>Retaining &amp; sitting walls</li><li>Fieldstone &amp; veneer</li><li>Engineered to last</li></ul></div>
+      <div class="card"><div class="ico">🚶</div><h3>Walkways &amp; Steps</h3><p>Natural stone paths that frame your home.</p><ul><li>Stone walkways</li><li>Granite &amp; bluestone steps</li><li>Entryways</li></ul></div>
+      <div class="card"><div class="ico">🔥</div><h3>Outdoor Living</h3><p>The heart of your summer.</p><ul><li>Fire pits &amp; fireplaces</li><li>Outdoor kitchens</li><li>Pillars &amp; features</li></ul></div>
+      <div class="card"><div class="ico">🌿</div><h3>Landscape &amp; Plantings</h3><p>Finishing the picture around the stone.</p><ul><li>Plantings &amp; design</li><li>Grading &amp; lawns</li><li>Tree removal</li></ul></div>
+      <div class="card"><div class="ico">📐</div><h3>Design-Build</h3><p>One team, vision to completion.</p><ul><li>On-site design consult</li><li>Transparent estimates</li><li>Single point of contact</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="dark" id="why">
+  <div class="wrap center">
+    <div class="eyebrow">The North Star Difference</div>
+    <h2>Why Homeowners Choose Us</h2>
+    <div class="grid">
+      <div class="card"><h3>Built to Last</h3><p>Real craftsmanship and proper base work — masonry that survives New England winters for generations. Done right, once.</p></div>
+      <div class="card"><h3>One Point of Contact</h3><p>From first design to the final stone, you work directly with Thiago. No runaround, no subcontractor maze.</p></div>
+      <div class="card"><h3>Premium, Not Cheap</h3><p>We're not the lowest bid. We're the one you only pay once — and the value stays in your home.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="wrap center">
+    <div class="eyebrow">Recent Work</div>
+    <h2>Our Craftsmanship</h2>
+    <p class="lead">Replace these with real project photos — premium photography is what sells premium work.</p>
+    <div class="gallery">
+      <div>[ stone patio ]</div><div>[ retaining wall ]</div><div>[ walkway ]</div><div>[ fire pit ]</div>
+      <div>[ before / after ]</div><div>[ outdoor kitchen ]</div><div>[ steps / entry ]</div><div>[ fieldstone wall ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="dark">
+  <div class="wrap center">
+    <div class="eyebrow">How It Works</div>
+    <h2>From Vision to Stone</h2>
+    <div class="steps">
+      <div class="step"><b>01 · CONSULT</b>Free on-site visit. We listen to your vision and assess the space.</div>
+      <div class="step"><b>02 · DESIGN</b>A clear design and transparent estimate — no surprises.</div>
+      <div class="step"><b>03 · RESERVE</b>A 50% deposit secures your slot on the build schedule.</div>
+      <div class="step"><b>04 · BUILD</b>Our crew builds it by hand. You enjoy it for decades.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="areas">
+  <div class="wrap center">
+    <div class="eyebrow">Where We Work</div>
+    <h2>Serving Cape Cod &amp; the South Shore</h2>
+    <p class="lead">Two regions, one standard of craftsmanship. Proudly building premium hardscape across southeastern Massachusetts.</p>
+    <div class="areas">
+      <div class="region">
+        <h3>Cape Cod</h3>
+        <div class="sub">Barnstable County</div>
+        <div class="towns">
+          <span>Hyannis</span><span>Barnstable</span><span>Osterville</span><span>Centerville</span>
+          <span>Chatham</span><span>Falmouth</span><span>Sandwich</span><span>Mashpee</span>
+          <span>Yarmouth</span><span>Dennis</span><span>Brewster</span><span>Cotuit</span>
+        </div>
+      </div>
+      <div class="region">
+        <h3>South Shore</h3>
+        <div class="sub">Plymouth &amp; Norfolk County</div>
+        <div class="towns">
+          <span>Plymouth</span><span>Duxbury</span><span>Hingham</span><span>Cohasset</span>
+          <span>Scituate</span><span>Marshfield</span><span>Norwell</span><span>Hanover</span>
+          <span>Pembroke</span><span>Kingston</span><span>Weymouth</span><span>Quincy</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;color:var(--muted);margin-top:20px">Don't see your town? <a href="#contact" style="color:var(--gold)">Reach out</a> — if you're on the Cape or South Shore, we likely serve you.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="dark" id="reviews">
+  <div class="wrap center">
+    <div class="eyebrow">What Clients Say</div>
+    <h2>Trusted Across the Region</h2>
+    <div class="grid">
+      <div class="quote" style="background:#23221f;border-color:#3a3833;color:#e7e3d9"><div class="stars">★★★★★</div>[ Replace with a real Google review. Premium proof closes premium jobs. ]<footer>— Client, Osterville</footer></div>
+      <div class="quote" style="background:#23221f;border-color:#3a3833;color:#e7e3d9"><div class="stars">★★★★★</div>[ Real review here. ]<footer>— Client, Duxbury</footer></div>
+      <div class="quote" style="background:#23221f;border-color:#3a3833;color:#e7e3d9"><div class="stars">★★★★★</div>[ Real review here. ]<footer>— Client, Hingham</footer></div>
+    </div>
+    <p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#9a958a;margin-top:18px">Pull real reviews from your Google Business Profile.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Good to Know</div><h2>Frequently Asked</h2></div>
+    <div style="max-width:760px;margin:0 auto">
+      <details open><summary>Do you serve both Cape Cod and the South Shore?</summary><p>Yes — we build across both regions, from Hyannis and Osterville to Plymouth, Duxbury and Hingham. One standard of craftsmanship everywhere.</p></details>
+      <details><summary>How do I reserve a project?</summary><p>After your free on-site consult and estimate, a 50% deposit secures your spot on our build schedule and covers materials. The balance is due on completion.</p></details>
+      <details><summary>When can you start?</summary><p>We're booking our 2026 schedule now. Reserving early holds your start date before the season fills.</p></details>
+      <details><summary>Are you licensed and insured?</summary><p>Fully licensed and insured in Massachusetts. You're covered, start to finish.</p></details>
+      <details><summary>Are you the cheapest option?</summary><p>No — and that's the point. We build masonry that lasts generations. You pay once, and the value stays in your home.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap center">
+    <div class="eyebrow">Start Your Project</div>
+    <h2>Book Your Free On-Site Consult</h2>
+    <p class="lead" style="color:#cfc8b8">Tell us about your project. We'll visit, design, and give you a transparent estimate. Cape Cod &amp; South Shore.</p>
+    <form class="cform" onsubmit="alert('Demo form — connect to email/CRM on launch.');return false">
+      <input placeholder="Full name" required>
+      <input placeholder="Phone" type="tel" required>
+      <input class="full" placeholder="Email" type="email" required>
+      <select required><option value="">Project type…</option><option>Stone / Paver Patio</option><option>Retaining / Stone Wall</option><option>Walkway / Steps</option><option>Outdoor Living (fire pit, kitchen)</option><option>Landscape / Plantings</option><option>Other</option></select>
+      <select required><option value="">Your town / region…</option><option>Cape Cod</option><option>South Shore</option></select>
+      <textarea class="full" rows="4" placeholder="Tell us about your project…"></textarea>
+      <button class="btn btn-dark full" type="submit" style="background:var(--gold);color:var(--ink)">Request My Free Consult</button>
+    </form>
+    <p style="font-family:Helvetica,Arial,sans-serif;margin-top:22px;color:#cfc8b8">Prefer to talk? Call <a href="tel:+15082803770" style="color:var(--gold)">508 280 3770</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><b>North Star Masonry &amp; Hardscape</b>Hand-built stone craftsmanship.<br>Built to last generations.</div>
+      <div><b>Services</b>Stone Patios · Retaining Walls · Walkways &amp; Steps · Outdoor Living · Landscape · Design-Build</div>
+      <div><b>Service Areas</b>Cape Cod &amp; South Shore, MA<br>Hyannis · Osterville · Chatham · Plymouth · Duxbury · Hingham</div>
+      <div><b>Contact</b><a href="tel:+15082803770">508 280 3770</a><br><a href="mailto:contact@roberts-landscape.com">contact@roberts-landscape.com</a></div>
+    </div>
+    <div class="legal">© 2026 North Star Masonry &amp; Hardscape · Licensed &amp; Insured in Massachusetts · Serving Cape Cod &amp; the South Shore</div>
+  </div>
+</footer>
+
+<script>
+  // close mobile menu on link click
+  document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
